@@ -1,4 +1,4 @@
-# Welcome Component Based Development
+# Welcome Gatsby Training
 A training workshop by [Mediacurrent](https://mediacurrent.com).
 
 ## Getting Started
@@ -98,13 +98,6 @@ In some instances, depending on your environment, you may need to append port 80
 
 
 ### You are done! 🙌 🔥 👊
-
----
-## Time for exercises
-Now that your local environment is set, it's time to build and integrate components.
-
-[Follow the exercises here](https://mariohernandez.gitbook.io/components/) <br />
-This is the curriculum we will follow during training.
 
 
 ## Managing your Lando environment
