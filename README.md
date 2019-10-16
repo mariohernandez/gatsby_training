@@ -59,7 +59,7 @@ You can clone or download the repo anywhere in your computer (i.e. Sites, Downlo
 
 6. Run `lando drush cr`<br />_This will clear Drupal's caches._
 
-
+<!--
 ## 4. Install Front End Tooling
 
 1. Run `cd web/themes/custom/nitflex_dev_theme`
@@ -83,7 +83,7 @@ You can clone or download the repo anywhere in your computer (i.e. Sites, Downlo
 
     * Skip step #2
     * Follow all other steps, but change step #5 by running this command istead:
-    * `lando php patternlab/core/console --generate`
+    * `lando php patternlab/core/console --generate` -->
 
 ---
 
