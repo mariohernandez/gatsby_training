@@ -13,11 +13,14 @@ if [ ! -z $LANDO_MOUNT ]; then
   cp -r assets/imgs/. web/sites/default/files/.
 
   # Check if the DB is empty before importing the gzipped backup.
+  cd ./web
   drush status bootstrap | grep Successful > /dev/null
   IMPORT_DATABASE=$?
   if [ $IMPORT_DATABASE -eq 1 ]; then
+    echo "Installing Drupal"
+    drush si -y config_installer --account-name=admin --account-pass=admin --db-url='mysql://drupal8:drupal8@database/drupal8'
     echo "Importing Drupal database"
-    gunzip -c drupal8.export.gz | drush sqlc
+    gunzip -c ../drupal8.export.gz | drush sqlc
   fi
 fi
 
