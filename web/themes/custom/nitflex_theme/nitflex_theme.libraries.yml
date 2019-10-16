@@ -1,0 +1,68 @@
+# These lines define the nitflex_theme/global library.
+global:
+  css:
+    # The SMACSS category, "base", is loaded before other categories. Drupal 8
+    # loads stylesheets based on the SMACSS ordering of:
+    # base, layout, component, state, theme
+    base:
+      dist/css/global.css: {}
+      dist/css/body-text.css: {}
+    layout:
+      dist/css/page.css: {}
+    component:
+      dist/css/branding.css: {}
+
+add-to-favorites:
+  css:
+    component:
+      dist/css/add-to-favorites.css: {}
+
+average-rating:
+  css:
+    component:
+      dist/css/average-rating.css: {}
+
+button:
+  css:
+    component:
+      dist/css/button.css: {}
+
+card-collection:
+  css:
+    component:
+      dist/css/card-collection.css: {}
+
+eyebrow:
+  css:
+    component:
+      dist/css/eyebrow.css: {}
+
+featured-movie:
+  css:
+    component:
+      dist/css/featured-movie.css: {}
+
+heading:
+  css:
+    component:
+      dist/css/heading.css: {}
+
+movie-card:
+  css:
+    component:
+      dist/css/movie-card.css: {}
+
+movie-list:
+  css:
+    component:
+      dist/css/movie-list.css: {}
+
+mpaa-rating:
+  css:
+    component:
+      dist/css/mpaa-rating.css: {}
+
+tabs:
+  css:
+    component:
+      dist/css/tabs.css: {}

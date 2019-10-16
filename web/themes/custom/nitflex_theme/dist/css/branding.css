@@ -1,0 +1,57 @@
+.branding {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%; }
+  .branding > {
+    padding: 0 10px; }
+
+.branding__site-name {
+  background-image: url("../assets/nitflex-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  min-width: 260px;
+  margin: 0 10px;
+  padding: 70px 0 0;
+  text-decoration: none; }
+  .branding__site-name:focus, .branding__site-name:hover {
+    text-decoration: none; }
+
+.branding__navigation ul:not(.contextual-links) {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.branding__navigation li {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  list-style: none;
+  margin: 10px 0;
+  padding: 0 10px; }
+  .branding__navigation li a {
+    color: #FFF;
+    text-decoration: none; }
+  .branding__navigation li a:focus,
+  .branding__navigation li a:hover {
+    color: #c4d600; }

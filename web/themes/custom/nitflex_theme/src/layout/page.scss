@@ -1,0 +1,23 @@
+// General page layout styling.
+
+// Import site utilities.
+@import '../_patterns/00-global/utils/init';
+
+.page {
+  overflow: hidden;
+
+  .page-node-type-landing-page &,
+  .page-node-type-landing-page & {
+    background-color: $color-black;
+  }
+}
+
+.page__container {
+  margin: 0 auto;
+  max-width: $content-width;
+}
+
+.page__help {
+  background-color: $color-white;
+  padding: 0 20px;
+}
