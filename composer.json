@@ -26,6 +26,8 @@
         "drupal/core": "^8.6.0",
         "drupal/devel": "^2.0",
         "drupal/flag": "^4.0@alpha",
+        "drupal/jsonapi": "^2.4",
+        "drupal/key_auth": "^1.0",
         "drupal/paragraphs": "^1.8",
         "drupal/pathauto": "^1.4",
         "drupal/twig_field_value": "^1.1",
