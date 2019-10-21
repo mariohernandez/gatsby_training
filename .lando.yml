@@ -21,5 +21,3 @@ tooling:
     service: node
   node:
     service: node
-  gulp:
-    service: node
