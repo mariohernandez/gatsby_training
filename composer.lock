@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "23387e3a6bfb3ffa96f772c556bdb1af",
+    "content-hash": "b07185b23ee74fdae518bb2946fa42a1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2804,53 +2804,6 @@
             "homepage": "https://www.drupal.org/project/jsonapi_extras",
             "support": {
                 "source": "https://git.drupalcode.org/project/jsonapi_extras"
-            }
-        },
-        {
-            "name": "drupal/key_auth",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/key_auth.git",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/key_auth-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "dfc746fb70716780c67e85be33e2c91a1d20fc60"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1524056284",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "mstef",
-                    "homepage": "https://www.drupal.org/user/107190"
-                }
-            ],
-            "description": "Provides an authentication provider based on per-user API keys.",
-            "homepage": "https://www.drupal.org/project/key_auth",
-            "support": {
-                "source": "https://git.drupalcode.org/project/key_auth"
             }
         },
         {
