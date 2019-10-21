@@ -8,7 +8,6 @@ if [ ! -z $LANDO_MOUNT ]; then
     chmod 755 web/sites/default
     mkdir web/sites/default/files
     chmod 777 web/sites/default/files
-    chmod 555 web/sites/default
   fi
   cp -r assets/imgs/. web/sites/default/files/.
 
