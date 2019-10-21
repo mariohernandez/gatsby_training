@@ -51,13 +51,15 @@ You can clone or download the repo anywhere in your computer (i.e. Sites, Downlo
 
 2. Run `lando start`<br />_This will set up Lando plus pull down and install Drupal and required contrib modules. This process could take a few minutes to complete, please do not interrupt it._
 
+3. Run `cd gatsby` to enter the Gatsby directory and then run `lando npm start` to start the Gatsby dev server. If it is successful, your gatsby site will be accessible at `http://gatsby.lndo.site`.
+
 <!-- 3. Run `lando drush si -y config_installer --account-name=admin --account-pass=admin --db-url='mysql://drupal8:drupal8@database/drupal8'`<br />_Be sure to run the entire string above as a single command.  This will do a basic installation of Drupal with some basic configuration._
 
-4. Run `cp -r assets/imgs/* web/sites/default/files/`<br />_This will copy our sample image assets to Drupal's default files directory._
+1. Run `cp -r assets/imgs/* web/sites/default/files/`<br />_This will copy our sample image assets to Drupal's default files directory._
 
-5. Run `lando db-import drupal8.export.gz`<br />_This will import a custom database that all drupal configuration such as content types, views and sample content._
+2. Run `lando db-import drupal8.export.gz`<br />_This will import a custom database that all drupal configuration such as content types, views and sample content._
 
-6. Run `lando drush cr`<br />_This will clear Drupal's caches._ -->
+3. Run `lando drush cr`<br />_This will clear Drupal's caches._ -->
 
 <!--
 ## 4. Install Front End Tooling
@@ -95,6 +97,8 @@ Your site's credentials are:  username: `admin`, password: `admin`
 You should see Drupal's homepage which includes a list of movies with images, title and other text content.
 
 In some instances, depending on your environment, you may need to append port 8000 to the url (i.e. http://nitflex.lndo.site:8000).
+
+To see Gatsby up and running, `cd gatsby && npm start`, then Gatsby should be visible at http://gatsby.lndo.site/
 
 
 ### You are done! 🙌 🔥 👊

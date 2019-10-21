@@ -1,13 +1,23 @@
 name: nitflex
+
 recipe: drupal8
 config:
   webroot: ./web
 
+proxy:
+  node:
+    - gatsby.lndo.site:8000
+
 services:
   node:
     type: node
+    port: 8000
     globals:
-      gulp-cli: "latest"
+      gatsby-cli: "2.8.3"
+      npm: "6.9.0"
+    run:
+      - echo "Installing Gatsby dependencies."
+      - cd gatsby && npm install
   appserver:
     run:
       - /app/scripts/init.sh
@@ -20,4 +30,6 @@ tooling:
   npm:
     service: node
   node:
+    service: node
+  gatsby:
     service: node
