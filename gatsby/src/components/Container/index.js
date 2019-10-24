@@ -1,11 +1,11 @@
 import React from 'react';
-import cn from 'classnames';
+import classnames from 'classnames';
 
 import styles from './styles.module.scss';
 
 const Container = ({ classes, children }) => {
   return (
-    <div className={cn(styles.container, { [classes]: classes })}>
+    <div className={classnames(styles.container, { [classes]: classes })}>
       {children}
     </div>
   );

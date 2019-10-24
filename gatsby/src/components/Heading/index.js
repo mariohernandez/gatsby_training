@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import cn from 'classnames';
+import classnames from 'classnames';
 
 import { childrenType } from '../../global/js/customPropTypes';
 import styles from './styles.module.scss';
@@ -17,7 +17,7 @@ const Heading = ({
   const Element = `h${level}`;
   return (
     <Element
-      className={cn(styles.heading, styles[`level${styleLevel}`], {
+      className={classnames(styles.heading, styles[`level${styleLevel}`], {
         [styles.primary]: primary,
         [styles.secondary]: secondary,
         [`${classes}`]: classes
