@@ -1,0 +1,81 @@
+$font-primary: 'Arial', sans-serif;
+$font-secondary: 'Times New Roman', serif;
+
+@mixin font-primary {
+  font-family: $font-primary;
+}
+
+@mixin font-secondary {
+  font-family: $font-secondary;
+}
+
+// Font weight vars.
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+$font-weight-light: 300;
+
+// Global styles for headings.
+// Font size setup to be 10px = 1rem.
+@mixin font-size-heading1 {
+  font-size: 3.6rem;
+
+  @include breakpoint($bp-xsm) {
+    font-size: 5.5rem;
+  }
+
+  @include breakpoint($bp-md) {
+    font-size: 7rem;
+  }
+}
+
+@mixin font-size-heading2 {
+  font-size: 2.8rem;
+
+  @include breakpoint($bp-xsm) {
+    font-size: 3.6rem;
+  }
+
+  @include breakpoint($bp-md) {
+    font-size: 4.2rem;
+  }
+}
+
+@mixin font-size-heading3 {
+  font-size: 2rem;
+
+  @include breakpoint($bp-xsm) {
+    font-size: 2.2rem;
+  }
+
+  @include breakpoint($bp-xsm) {
+    font-size: 2.6rem;
+  }
+}
+
+@mixin font-size-heading4 {
+  font-size: 1.6rem;
+
+  @include breakpoint($bp-xsm) {
+    font-size: 1.6rem;
+  }
+
+  @include breakpoint($bp-md) {
+    font-size: 2rem;
+  }
+}
+// CHEEZ-76 ends at h4.
+@mixin font-size-heading5 {
+  font-size: 1rem;
+
+  @include breakpoint($bp-xsm) {
+    font-size: 1.25rem;
+  }
+}
+
+@mixin font-size-heading6 {
+  font-size: 1rem;
+
+  @include breakpoint($bp-xsm) {
+    font-size: 1rem;
+  }
+}

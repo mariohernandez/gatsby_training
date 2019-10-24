@@ -1,0 +1,5 @@
+@mixin breakpoint($viewport) {
+  @media screen and ( min-width: $viewport ) {
+    @content;
+  }
+}

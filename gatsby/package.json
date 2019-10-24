@@ -24,7 +24,8 @@
     "sass-lint": "^1.13.1"
   },
   "keywords": [
-    "gatsby", "drupal"
+    "gatsby",
+    "drupal"
   ],
   "license": "MIT",
   "scripts": {
