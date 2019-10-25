@@ -35,10 +35,7 @@ Watch the [Step-by-step video tutorial](https://www.dropbox.com/s/pa7mdlung83cdr
 You can clone or download the repo anywhere in your computer (i.e. Sites, Downloads, Documents, Desktop, etc.).
 
 * In your preferred terminal app, run the following command:<br />
-```git clone git@github.com:mediacurrent/gatsby-training```
-
-* If you experience issues with the command above, try this one:<br />
-```git clone https://github.com/mediacurrent/gatsby-training```
+```git clone https://github.com/mediacurrent/gatsby-training.git```
 
 
 ## 3. Build the environment:
@@ -53,39 +50,6 @@ You can clone or download the repo anywhere in your computer (i.e. Sites, Downlo
 
 3. Run `cd gatsby` to enter the Gatsby directory and then run `lando npm start` to start the Gatsby dev server. If it is successful, your gatsby site will be accessible at `http://gatsby.lndo.site`.
 
-<!-- 3. Run `lando drush si -y config_installer --account-name=admin --account-pass=admin --db-url='mysql://drupal8:drupal8@database/drupal8'`<br />_Be sure to run the entire string above as a single command.  This will do a basic installation of Drupal with some basic configuration._
-
-1. Run `cp -r assets/imgs/* web/sites/default/files/`<br />_This will copy our sample image assets to Drupal's default files directory._
-
-2. Run `lando db-import drupal8.export.gz`<br />_This will import a custom database that all drupal configuration such as content types, views and sample content._
-
-3. Run `lando drush cr`<br />_This will clear Drupal's caches._ -->
-
-<!--
-## 4. Install Front End Tooling
-
-1. Run `cd web/themes/custom/nitflex_dev_theme`
-
-2. Run: `lando npm install`<br />_This will install the required front end tools (Node, Gulp, etc.)_<br />
-**Note**: You may see npm warnings about a missing "repository" or "license" field, as well as a message about vulnerabilities. For our purposes, all of these messages can be ignored, and you _do not_ need to run any of the "audit" commands it suggests.
-
-3. Move into the patternlab directory:  `cd patternlab`
-
-4. Run: `lando composer install`<br />_This will install PatternLab_<br />
-    - When prompted to `update the config option twigAutoescape`, reply with **n**.<br />
-    - When prompted that the `path ./../dist/style-guide/ already exists`, reply with **M**.<br />
-    - When prompted to `update the config option styleguideKitPath`, reply with **Y**.
-
-5. Run an initial build of the front end tools and PatternLab.<br />
-    - First run `cd ../`<br />
-    - then run<br />```lando npm run build && lando php patternlab/core/console --generate```
-    - Done!
-
-      **WINDOWS USERS ONLY**:  If you experienced issues with the steps above do the following:
-
-    * Skip step #2
-    * Follow all other steps, but change step #5 by running this command istead:
-    * `lando php patternlab/core/console --generate` -->
 
 ---
 
