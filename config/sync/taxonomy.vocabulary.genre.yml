@@ -5,5 +5,4 @@ dependencies: {  }
 name: Genre
 vid: genre
 description: 'Genre categories for movies'
-hierarchy: 0
 weight: 0
