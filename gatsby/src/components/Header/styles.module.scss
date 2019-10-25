@@ -1,0 +1,19 @@
+@import '../../global/styles/init';
+.header {
+  background: $color-black;
+  margin-bottom: 1.45rem;
+  padding: 1rem;
+}
+
+.heading {
+  margin: 0;
+
+  @include breakpoint($bp-sm) {
+    margin: 0;
+  }
+}
+
+.heading a {
+  color: $color-cardinal;
+  text-decoration: none;
+}

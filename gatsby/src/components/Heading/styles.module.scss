@@ -1,0 +1,34 @@
+// Default styling for component title.
+@import '../../global/styles/init';
+
+.primary {
+  @include font-primary;
+}
+
+.secondary {
+  @include font-secondary;
+}
+
+.level1 {
+  @include font-size-heading1
+}
+
+.level2 {
+  @include font-size-heading2
+}
+
+.level3 {
+  @include font-size-heading3
+}
+
+.level4 {
+  @include font-size-heading4
+}
+
+.level5 {
+  @include font-size-heading5
+}
+
+.level6 {
+  @include font-size-heading6
+}
