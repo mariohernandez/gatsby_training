@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
+import { Link, graphql } from 'gatsby';
+import Image from 'gatsby-image';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Heading from '../components/Heading';
@@ -12,6 +12,11 @@ const IndexPage = ({ data }) => (
     {data.movies.edges.map(({ node }) => (
       <div>
         <Link to={node.path.alias}>{node.title}</Link>
+        <Image
+          fluid={
+            node.relationships.field_main_image.localFile.childImageSharp.fluid
+          }
+        />
       </div>
     ))}
     <Link to="/page-2/">Go to page 2</Link>
@@ -34,6 +39,9 @@ export const query = graphql`
               localFile {
                 childImageSharp {
                   id
+                  fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
             }
