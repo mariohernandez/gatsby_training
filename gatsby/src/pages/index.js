@@ -8,7 +8,11 @@ import Heading from '../components/Heading';
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <Heading>Nitflex</Heading>
+    <Heading level={1}>Nitflex</Heading>
+    <Heading>Heading 2</Heading>
+    <Heading level={4} uppercase>
+      Uppercase Heading
+    </Heading>
     {data.movies.edges.map(({ node }) => (
       <div>
         <Link to={node.path.alias}>{node.title}</Link>

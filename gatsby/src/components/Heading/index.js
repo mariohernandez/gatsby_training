@@ -9,7 +9,7 @@ const Heading = ({
   classes,
   text,
   level,
-  styleLevel,
+  styleLevel = level,
   primary,
   secondary,
   uppercase,
@@ -46,7 +46,6 @@ Heading.propTypes = {
 
 Heading.defaultProps = {
   level: 2,
-  styleLevel: 2,
   primary: true
 };
 
