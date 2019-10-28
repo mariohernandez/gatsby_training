@@ -4,6 +4,8 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Heading from '../components/Heading';
+import Hero from '../components/Hero';
+
 import GenreSection from '../components/GenreSection';
 
 const IndexPage = ({ data }) => (
@@ -14,6 +16,12 @@ const IndexPage = ({ data }) => (
     <Heading level={4} uppercase>
       Uppercase Heading
     </Heading>
+    <Hero
+      image={
+        data.actionMovies.edges[0].node.relationships.field_main_image.localFile
+          .childImageSharp.fluid
+      }
+    ></Hero>
     <GenreSection title="Action" items={data.actionMovies.edges} />
     <GenreSection title="Family" items={data.familyMovies.edges} />
   </Layout>

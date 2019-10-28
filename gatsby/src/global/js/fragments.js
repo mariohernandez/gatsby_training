@@ -10,7 +10,7 @@ export const MovieFragment = graphql`
         localFile {
           childImageSharp {
             id
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 1600, maxHeight: 900) {
               ...GatsbyImageSharpFluid
             }
           }

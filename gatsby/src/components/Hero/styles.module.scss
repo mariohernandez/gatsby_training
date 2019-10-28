@@ -1,0 +1,38 @@
+.hero {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+
+  &:hover {
+    .inner {
+      transform: scale(1.05);
+    }
+
+    .inner::after {
+      opacity: 1;
+    }
+  }
+}
+
+.inner {
+  position: relative;
+  transition: transform .3s;
+
+  &::after {
+    background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.6054796918767507) 75%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .3s;
+    width: 100%;
+    z-index: 1;
+  }
+}
