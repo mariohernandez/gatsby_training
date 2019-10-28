@@ -10,7 +10,7 @@ proxy:
 
 services:
   node:
-    type: node
+    type: node:10.14
     port: 8000
     globals:
       gatsby-cli: "2.8.3"
