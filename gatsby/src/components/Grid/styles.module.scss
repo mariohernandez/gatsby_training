@@ -1,0 +1,10 @@
+@import '../../global/styles/init';
+
+.grid {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($bp-sm) {
+    flex-direction: row;
+  }
+}

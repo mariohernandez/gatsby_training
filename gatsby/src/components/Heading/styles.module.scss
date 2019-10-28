@@ -1,6 +1,10 @@
 // Default styling for component title.
 @import '../../global/styles/init';
 
+.heading {
+  color: $color-white;
+}
+
 .primary {
   @include font-primary;
 }
