@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
-import Image from 'gatsby-image';
+import { graphql } from 'gatsby';
+
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Heading from '../components/Heading';
+import GenreSection from '../components/GenreSection';
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -13,17 +14,8 @@ const IndexPage = ({ data }) => (
     <Heading level={4} uppercase>
       Uppercase Heading
     </Heading>
-    {data.movies.edges.map(({ node }) => (
-      <div>
-        <Link to={node.path.alias}>{node.title}</Link>
-        <Image
-          fluid={
-            node.relationships.field_main_image.localFile.childImageSharp.fluid
-          }
-        />
-      </div>
-    ))}
-    <Link to="/page-2/">Go to page 2</Link>
+    <GenreSection title="Action" items={data.actionMovies.edges} />
+    <GenreSection title="Family" items={data.familyMovies.edges} />
   </Layout>
 );
 
@@ -31,25 +23,30 @@ export default IndexPage;
 
 export const query = graphql`
   {
-    movies: allNodeMovie {
+    actionMovies: allNodeMovie(
+      filter: {
+        relationships: {
+          field_genres: { elemMatch: { name: { eq: "Action" } } }
+        }
+      }
+    ) {
       edges {
         node {
-          path {
-            alias
-          }
-          title
-          relationships {
-            field_main_image {
-              localFile {
-                childImageSharp {
-                  id
-                  fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-          }
+          ...MovieFragment
+        }
+      }
+    }
+
+    familyMovies: allNodeMovie(
+      filter: {
+        relationships: {
+          field_genres: { elemMatch: { name: { eq: "Family" } } }
+        }
+      }
+    ) {
+      edges {
+        node {
+          ...MovieFragment
         }
       }
     }

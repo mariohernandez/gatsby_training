@@ -1,0 +1,55 @@
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  margin-right: .5rem;
+  position: relative;
+  transition: transform .3s;
+  width: 25%;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    transform: scale(1.05);
+    z-index: 10;
+
+    .details {
+      display: flex;
+    }
+  }
+}
+
+.title {
+  color: white;
+  font-family: 'Helvetica';
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.details {
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  &::after {
+    background: rgba(0, 0, 0, 0.6);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.detailsInner {
+  z-index: 3;
+  padding: 1rem;
+  color: white;
+}
