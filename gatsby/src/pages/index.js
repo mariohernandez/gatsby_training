@@ -8,24 +8,24 @@ import Hero from '../components/Hero';
 
 import GenreSection from '../components/GenreSection';
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <SEO title="Home" />
-    <Heading level={1}>Nitflex</Heading>
-    <Heading>Heading 2</Heading>
-    <Heading level={4} uppercase>
-      Uppercase Heading
-    </Heading>
-    <Hero
-      image={
-        data.actionMovies.edges[0].node.relationships.field_main_image.localFile
-          .childImageSharp.fluid
-      }
-    ></Hero>
-    <GenreSection title="Action" items={data.actionMovies.edges} />
-    <GenreSection title="Family" items={data.familyMovies.edges} />
-  </Layout>
-);
+const IndexPage = ({ data }) => {
+  const featuredNode = data.actionMovies.edges[0].node;
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Heading level={1}>Nitflex</Heading>
+      <Hero
+        title={featuredNode.title}
+        image={
+          featuredNode.relationships.field_main_image.localFile.childImageSharp
+            .fluid
+        }
+      ></Hero>
+      <GenreSection title="Action" items={data.actionMovies.edges} />
+      <GenreSection title="Family" items={data.familyMovies.edges} />
+    </Layout>
+  );
+};
 
 export default IndexPage;
 
