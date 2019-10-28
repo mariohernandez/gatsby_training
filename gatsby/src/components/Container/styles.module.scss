@@ -6,6 +6,7 @@
   max-width: 960px;
   padding-left:  1.5rem;
   padding-right: 1.5rem;
+  width: 100%;
 
   @include breakpoint($bp-md) {
     max-width: $bp-md;
