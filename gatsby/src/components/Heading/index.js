@@ -12,6 +12,7 @@ const Heading = ({
   styleLevel,
   primary,
   secondary,
+  uppercase,
   children
 }) => {
   const Element = `h${level}`;
@@ -20,6 +21,7 @@ const Heading = ({
       className={classnames(styles.heading, styles[`level${styleLevel}`], {
         [styles.primary]: primary,
         [styles.secondary]: secondary,
+        [styles.uppercase]: uppercase,
         [`${classes}`]: classes
       })}
     >
@@ -38,6 +40,7 @@ Heading.propTypes = {
   text: PropTypes.string,
   primary: PropTypes.bool,
   secondary: PropTypes.bool,
+  uppercase: PropTypes.bool,
   children: childrenType
 };
 
