@@ -16,6 +16,9 @@ export const MovieFragment = graphql`
           }
         }
       }
+      field_genres {
+        name
+      }
     }
   }
 `;
