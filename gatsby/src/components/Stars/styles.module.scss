@@ -1,0 +1,46 @@
+@import '../../global/styles/init';
+
+.container {
+  overflow: hidden;
+  position: relative;
+}
+
+.stars {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.star {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  + .star {
+    margin-left: 5px;
+  }
+
+  svg {
+    height: 20px;
+    width: 20px;
+
+    polygon {
+      fill: $color-silver;
+    }
+
+    polyline {
+      fill: $color-white;
+    }
+  }
+}
+
+.star.active {
+  svg polyline {
+    fill: $color-rio-grande;
+  }
+}
+
+.text {
+  @include element-invisible;
+}

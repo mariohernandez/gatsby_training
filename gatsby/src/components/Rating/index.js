@@ -7,7 +7,7 @@ const Rating = ({ rating, classes = {} }) => {
   return (
     <div className={classnames(styles.rating, { [classes]: classes })}>
       <span className={styles.text}>Rated:</span>
-      <span class="mpaa-rating__rating">{rating}</span>
+      <span>{rating}</span>
     </div>
   );
 };

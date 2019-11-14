@@ -9,6 +9,7 @@ export const MovieFragment = graphql`
       value
     }
     rating: field_mpaa_rating
+    stars: field_average_viewer_rating
     relationships {
       mainImage: field_main_image {
         localFile {

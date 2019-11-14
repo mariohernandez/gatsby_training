@@ -20,6 +20,7 @@ const GenreSection = ({ title, items }) => {
             image={node.relationships.mainImage.localFile.childImageSharp.fluid}
             rating={node.rating}
             description={node.body.value}
+            stars={node.stars}
           ></GridItem>
         ))}
       </Grid>
