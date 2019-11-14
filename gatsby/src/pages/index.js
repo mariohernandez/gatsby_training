@@ -10,18 +10,18 @@ import Hero from '../components/Hero';
 import GenreSection from '../components/GenreSection';
 
 const IndexPage = ({ data }) => {
+  // Group movies by their genre name.
   const groups = groupBy(
     data.allNodeMovie.edges,
     ({ node }) => node.relationships.field_genres[0].name
   );
 
+  // Get first movie from first genre to be featured for hero.
   const featuredNode = Object.values(groups)[0][0].node;
-  console.log(groups);
 
   return (
     <Layout>
       <SEO title="Home" />
-      <Heading level={1}>Nitflex</Heading>
       <Hero
         title={featuredNode.title}
         image={
@@ -29,6 +29,7 @@ const IndexPage = ({ data }) => {
             .fluid
         }
       ></Hero>
+      {/* Map over groups and pass each group in to the section. */}
       {Object.keys(groups).map((group) => (
         <GenreSection title={group} items={groups[group]} />
       ))}
@@ -41,20 +42,6 @@ export default IndexPage;
 export const query = graphql`
   {
     allNodeMovie {
-      edges {
-        node {
-          ...MovieFragment
-        }
-      }
-    }
-
-    familyMovies: allNodeMovie(
-      filter: {
-        relationships: {
-          field_genres: { elemMatch: { name: { eq: "Family" } } }
-        }
-      }
-    ) {
       edges {
         node {
           ...MovieFragment
