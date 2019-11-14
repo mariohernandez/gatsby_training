@@ -1,11 +1,8 @@
 import { Link, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Image from 'gatsby-image';
 
 import Container from '../Container';
-import Heading from '../Heading';
-
 import styles from './styles.module.scss';
 
 const Header = ({ siteTitle }) => {
@@ -23,7 +20,6 @@ const Header = ({ siteTitle }) => {
       }
     }
   `);
-  console.log(data);
 
   return (
     <header className={styles.header}>
