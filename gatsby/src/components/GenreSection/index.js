@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Heading from '../Heading';
+import Eyebrow from '../Eyebrow';
 import Grid from '../Grid';
 import GridItem from '../GridItem';
 
@@ -9,10 +9,8 @@ import styles from './styles.module.scss';
 
 const GenreSection = ({ title, items }) => {
   return (
-    <div>
-      <Heading level={3} uppercase>
-        {title}
-      </Heading>
+    <div className={styles.section}>
+      <Eyebrow>{title}</Eyebrow>
       <Grid>
         {items.map(({ node }) => (
           <GridItem

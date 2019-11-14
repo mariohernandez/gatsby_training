@@ -9,6 +9,13 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/global/images/`
+      }
+    },
+    {
       resolve: 'gatsby-source-drupal',
       options: {
         baseUrl: 'http://nitflex.lndo.site/'
