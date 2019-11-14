@@ -5,6 +5,9 @@ export const MovieFragment = graphql`
       alias
     }
     title
+    body {
+      value
+    }
     relationships {
       field_main_image {
         localFile {

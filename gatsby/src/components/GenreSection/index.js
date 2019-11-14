@@ -21,6 +21,7 @@ const GenreSection = ({ title, items }) => {
               node.relationships.field_main_image.localFile.childImageSharp
                 .fluid
             }
+            description={node.body.value}
           ></GridItem>
         ))}
       </Grid>
