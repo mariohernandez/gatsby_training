@@ -8,8 +8,9 @@ export const MovieFragment = graphql`
     body {
       value
     }
+    rating: field_mpaa_rating
     relationships {
-      field_main_image {
+      mainImage: field_main_image {
         localFile {
           childImageSharp {
             id
@@ -19,7 +20,7 @@ export const MovieFragment = graphql`
           }
         }
       }
-      field_genres {
+      genres: field_genres {
         name
       }
     }
