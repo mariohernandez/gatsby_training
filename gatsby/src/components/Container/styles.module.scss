@@ -15,4 +15,8 @@
   @include breakpoint($bp-lg) {
     max-width: $bp-lg;
   }
+
+  @include breakpoint($bp-xlg) {
+    max-width: $bp-xlg;
+  }
 }

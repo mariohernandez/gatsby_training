@@ -5,7 +5,7 @@ import Image from 'gatsby-image';
 
 import styles from './styles.module.scss';
 
-const GridItem = ({ title, path, image, children }) => {
+const GridItem = ({ title, path, image, description, children }) => {
   return (
     <div className={styles.gridItem} tabIndex={1}>
       <Image fluid={image} />
@@ -16,7 +16,9 @@ const GridItem = ({ title, path, image, children }) => {
             {title}
           </Link>
           <div>Stars</div>
-          <div>Description</div>
+          <div className={styles.description}>
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+          </div>
         </div>
       </div>
     </div>
