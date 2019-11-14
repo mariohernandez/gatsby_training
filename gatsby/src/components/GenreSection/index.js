@@ -17,10 +17,8 @@ const GenreSection = ({ title, items }) => {
             key={node.nid}
             path={node.path.alias}
             title={node.title}
-            image={
-              node.relationships.field_main_image.localFile.childImageSharp
-                .fluid
-            }
+            image={node.relationships.mainImage.localFile.childImageSharp.fluid}
+            rating={node.rating}
             description={node.body.value}
           ></GridItem>
         ))}

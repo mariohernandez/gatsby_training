@@ -4,7 +4,6 @@ import groupBy from 'lodash/groupBy';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import Heading from '../components/Heading';
 import Hero from '../components/Hero';
 
 import GenreSection from '../components/GenreSection';
@@ -13,7 +12,7 @@ const IndexPage = ({ data }) => {
   // Group movies by their genre name.
   const groups = groupBy(
     data.allNodeMovie.edges,
-    ({ node }) => node.relationships.field_genres[0].name
+    ({ node }) => node.relationships.genres[0].name
   );
 
   // Get first movie from first genre to be featured for hero.
@@ -25,8 +24,7 @@ const IndexPage = ({ data }) => {
       <Hero
         title={featuredNode.title}
         image={
-          featuredNode.relationships.field_main_image.localFile.childImageSharp
-            .fluid
+          featuredNode.relationships.mainImage.localFile.childImageSharp.fluid
         }
       ></Hero>
       {/* Map over groups and pass each group in to the section. */}
