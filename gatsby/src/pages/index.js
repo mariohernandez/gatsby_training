@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import groupBy from 'lodash/groupBy';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -9,11 +10,18 @@ import Hero from '../components/Hero';
 import GenreSection from '../components/GenreSection';
 
 const IndexPage = ({ data }) => {
-  const featuredNode = data.actionMovies.edges[0].node;
+  // Group movies by their genre name.
+  const groups = groupBy(
+    data.allNodeMovie.edges,
+    ({ node }) => node.relationships.field_genres[0].name
+  );
+
+  // Get first movie from first genre to be featured for hero.
+  const featuredNode = Object.values(groups)[0][0].node;
+
   return (
     <Layout>
       <SEO title="Home" />
-      <Heading level={1}>Nitflex</Heading>
       <Hero
         title={featuredNode.title}
         image={
@@ -21,8 +29,10 @@ const IndexPage = ({ data }) => {
             .fluid
         }
       ></Hero>
-      <GenreSection title="Action" items={data.actionMovies.edges} />
-      <GenreSection title="Family" items={data.familyMovies.edges} />
+      {/* Map over groups and pass each group in to the section. */}
+      {Object.keys(groups).map((group) => (
+        <GenreSection title={group} items={groups[group]} />
+      ))}
     </Layout>
   );
 };
@@ -31,27 +41,7 @@ export default IndexPage;
 
 export const query = graphql`
   {
-    actionMovies: allNodeMovie(
-      filter: {
-        relationships: {
-          field_genres: { elemMatch: { name: { eq: "Action" } } }
-        }
-      }
-    ) {
-      edges {
-        node {
-          ...MovieFragment
-        }
-      }
-    }
-
-    familyMovies: allNodeMovie(
-      filter: {
-        relationships: {
-          field_genres: { elemMatch: { name: { eq: "Family" } } }
-        }
-      }
-    ) {
+    allNodeMovie {
       edges {
         node {
           ...MovieFragment
