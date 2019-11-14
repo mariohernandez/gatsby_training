@@ -5,8 +5,13 @@ export const MovieFragment = graphql`
       alias
     }
     title
+    body {
+      value
+    }
+    rating: field_mpaa_rating
+    stars: field_average_viewer_rating
     relationships {
-      field_main_image {
+      mainImage: field_main_image {
         localFile {
           childImageSharp {
             id
@@ -16,7 +21,7 @@ export const MovieFragment = graphql`
           }
         }
       }
-      field_genres {
+      genres: field_genres {
         name
       }
     }
