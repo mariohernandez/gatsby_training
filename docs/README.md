@@ -1,2 +1,1 @@
-# Initial page
-
+# About this training
