@@ -1,6 +1,6 @@
 # Table of contents
 
-* [About this training](README.md)
+* [Introduction](README.md)
 
 ## CHAPTER 1
 
