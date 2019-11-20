@@ -14,13 +14,12 @@
 * [Build your first gatsby site](chapter-2/build-your-first-gatsby-site.md)
 * [Overview of project structure](chapter-2/overview-of-project-structure.md)
 
-
 ## CHAPTER 3
 
 * [Create a page](chapter-3/create-page.md)
-* [Explain create page function with index page](chapter-3/create-page-function.md)
+* [Explain create page function with index page](chapter-3/explain-create-page-function-with-index-page.md)
 * [Build the movie detail page](chapter-3/build-movie-detail-page.md)
-* [Creating a template](chapter-3/create-a-template.md)
+* [Creating a template](chapter-3/creating-a-template.md)
 
 ## CHAPTER 4
 
@@ -42,6 +41,7 @@
 
 * [Gatsby preview](chapter-7/gatsby-preview.md)
 * [Creating a template](chapter-7/creating-a-template.md)
-* [Adding scripts  using gatsby ssr](chapter-7/adding-scripts-using-gatsby.md)
+* [Adding scripts  using gatsby ssr](chapter-7/adding-scripts-using-gatsby-ssr.md)
 * [Getting runtime data from apis useeffect or usequery](chapter-7/getting-runtime-data-from-apis-useeffect-or-usequery.md)
 * [Working with images](chapter-7/working-with-images.md)
+

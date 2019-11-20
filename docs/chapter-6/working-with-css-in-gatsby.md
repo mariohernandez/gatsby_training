@@ -1,2 +1,2 @@
-# Working with CSS
+# Working with CSS in Gatsby
 

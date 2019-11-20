@@ -1,2 +1,2 @@
-# Data sources
+# Connecting a data source
 

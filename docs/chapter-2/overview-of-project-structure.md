@@ -1,2 +1,2 @@
-# Project Structure Overview
+# Overview of project structure
 

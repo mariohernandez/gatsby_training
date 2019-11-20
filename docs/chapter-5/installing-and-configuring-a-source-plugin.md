@@ -1,1 +1,2 @@
-# Installing  and configuring a source plugin
+# Installing and configuring a source plugin
+

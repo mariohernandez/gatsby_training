@@ -1,2 +1,2 @@
-# Create Page Function
+# Create a page
 

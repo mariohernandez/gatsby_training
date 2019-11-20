@@ -1,2 +1,2 @@
-# Build your first Gatsby Site
+# Build your first gatsby site
 

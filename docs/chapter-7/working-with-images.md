@@ -1,2 +1,2 @@
-# Working with Images
+# Working with images
 

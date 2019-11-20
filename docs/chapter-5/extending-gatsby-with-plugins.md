@@ -1,2 +1,2 @@
-# Gatsby plugins
+# Extending Gatsby with plugins
 
