@@ -1,2 +1,1 @@
-# What is Gatsby
-
+# What is Gatsby?
