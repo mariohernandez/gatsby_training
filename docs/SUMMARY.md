@@ -12,25 +12,26 @@
 ## CHAPTER 2
 
 * [Build your first gatsby site](chapter-2/build-your-first-gatsby-site.md)
-* [Project structure overview](chapter-2/project-structure-overview.md)
+* [Overview of project structure](chapter-2/overview-of-project-structure.md)
 
 
 ## CHAPTER 3
 
-* [Create Page function explained](chapter-3/create-page-explained.md)
-* [Create page](chapter-3/create-page.md)
+* [Create a page](chapter-3/create-page.md)
+* [Explain create page function with index page](chapter-3/create-page-function.md)
+* [Build the movie detail page](chapter-3/build-movie-detail-page.md)
 * [Creating a template](chapter-3/create-a-template.md)
 
 ## CHAPTER 4
 
-* [Adding a GraphQL query](chapter-4/adding-a-graphql-query.md)
 * [Connecting a data source](chapter-4/connecting-a-data-source.md)
-* [Using Gatsby node to create nodes](chapter-4/using-gatsby-node-to-create-nodes.md)
+* [Adding a GraphQL query](chapter-4/adding-a-graphql-query.md)
+* [Using gatsby-node to create nodes](chapter-4/using-gatsby-node-to-create-nodes.md)
 
 ## CHAPTER 5
 
 * [Extending Gatsby with plugins](chapter-5/extending-gatsby-with-plugins.md)
-* [Installing a source plugin](chapter-5/installing-a-source-plugin.md)
+* [Installing and configuring a source plugin](chapter-5/installing-and-configuring-a-source-plugin.md)
 
 ## CHAPTER 6
 
@@ -39,6 +40,8 @@
 
 ## CHAPTER 7
 
+* [Gatsby preview](chapter-7/gatsby-preview.md)
+* [Creating a template](chapter-7/creating-a-template.md)
 * [Adding scripts  using gatsby ssr](chapter-7/adding-scripts-using-gatsby.md)
 * [Getting runtime data from apis useeffect or usequery](chapter-7/getting-runtime-data-from-apis-useeffect-or-usequery.md)
 * [Working with images](chapter-7/working-with-images.md)
