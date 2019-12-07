@@ -1,5 +1,0 @@
-button:
-  modifier: button--primary
-  text: "Primary button"
-  url: "#"
-  
