@@ -1,2 +1,2 @@
-# Getting runtime data from APIs \(useEffect or useQuery\)
+# Getting runtime data from apis useeffect or usequery
 

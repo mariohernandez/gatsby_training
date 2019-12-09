@@ -1,2 +1,2 @@
-# Adding scripts using gatsby-ssr
+# Adding scripts  using gatsby ssr
 
