@@ -2,13 +2,18 @@ name: nitflex
 
 recipe: drupal8
 config:
-  webroot: ./web
+  webroot: drupal/web
 
 proxy:
   node:
     - gatsby.lndo.site:8000
 
 services:
+  appserver:
+    build:
+      - cd drupal && composer install
+    run:
+      - /app/drupal/scripts/init.sh
   node:
     type: node:10.14
     port: 8000
@@ -18,13 +23,6 @@ services:
     run:
       - echo "Installing Gatsby dependencies."
       - cd gatsby && npm install
-  appserver:
-    run:
-      - /app/scripts/init.sh
-
-events:
-  post-start:
-    - appserver: cd $LANDO_MOUNT && composer install
 
 tooling:
   npm:
