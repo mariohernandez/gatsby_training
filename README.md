@@ -62,7 +62,7 @@ You should see Drupal's homepage which includes a list of movies with images, ti
 
 In some instances, depending on your environment, you may need to append port 8000 to the url (i.e. http://nitflex.lndo.site:8000).
 
-To see Gatsby up and running, `cd gatsby && npm start`, then Gatsby should be visible at http://gatsby.lndo.site/
+To see Gatsby up and running, `cd gatsby && lando npm start`, then Gatsby should be visible at http://gatsby.lndo.site/
 
 
 ### You are done! 🙌 🔥 👊
