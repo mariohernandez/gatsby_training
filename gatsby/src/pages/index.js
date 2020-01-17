@@ -23,6 +23,9 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <Hero
         title={featuredNode.title}
+        subtitle={featuredNode.field_promo_sentence}
+        rating={featuredNode.rating}
+        stars={featuredNode.stars}
         image={
           featuredNode.relationships.mainImage.localFile.childImageSharp.fluid
         }
