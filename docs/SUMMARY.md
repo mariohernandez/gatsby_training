@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Setup local environment](setup-local-environment.md)
 
 ## CHAPTER 1
 
