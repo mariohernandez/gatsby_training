@@ -6,9 +6,9 @@
 ## CHAPTER 1
 
 * [What is Gatsby?](chapter-1/what-is-gatsby.md)
-* [React](chapter-1/react.md)
-* [GraphQL](chapter-1/graphql.md)
-* [Webpack](chapter-1/webpack.md)
+* [What is React?](chapter-1/react.md)
+* [What is GraphQL?](chapter-1/graphql.md)
+* [What is Webpack?](chapter-1/webpack.md)
 
 ## CHAPTER 2
 
