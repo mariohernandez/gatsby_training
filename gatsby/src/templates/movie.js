@@ -2,20 +2,23 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Image from 'gatsby-image';
 import Layout from '../components/Layout';
+import Hero from '../components/Hero';
+import Details from '../components/Details';
 import Heading from '../components/Heading';
 
 const MovieTemplate = ({ data }) => {
   const { movie } = data;
-  console.log(movie);
-
   return (
     <Layout>
-      <Heading level={1}>{movie.title}</Heading>
-      <Image
-        fluid={
-          movie.relationships.field_main_image.localFile.childImageSharp.fluid
-        }
+      <Hero
+        title={movie.title}
+        subtitle={movie.field_promo_sentence}
+        rating={movie.rating}
+        stars={movie.stars}
+        image={movie.relationships.mainImage.localFile.childImageSharp.fluid}
+        path={movie.path.alias}
       />
+      <Details>{movie.body.value}</Details>
     </Layout>
   );
 };
@@ -27,19 +30,7 @@ export default MovieTemplate;
 export const query = graphql`
   query($slug: String!) {
     movie: nodeMovie(path: { alias: { eq: $slug } }) {
-      title
-      relationships {
-        field_main_image {
-          localFile {
-            childImageSharp {
-              id
-              fluid(maxWidth: 500) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
+      ...MovieFragment
     }
   }
 `;

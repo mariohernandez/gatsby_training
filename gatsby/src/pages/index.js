@@ -26,6 +26,7 @@ const IndexPage = ({ data }) => {
         subtitle={featuredNode.field_promo_sentence}
         rating={featuredNode.rating}
         stars={featuredNode.stars}
+        path={featuredNode.path.alias}
         image={
           featuredNode.relationships.mainImage.localFile.childImageSharp.fluid
         }
