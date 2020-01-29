@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Image from 'gatsby-image';
 import { Link } from 'gatsby';
+
 import Heading from '../Heading';
 import Stars from '../Stars';
 import CtaButton from '../CtaButton';
-
 import Rating from '../Rating';
 
 import styles from './styles.module.scss';
@@ -43,5 +43,6 @@ Hero.propTypes = {
   subtitle: PropTypes.string,
   rating: PropTypes.string,
   stars: PropTypes.number,
-  image: PropTypes.string
+  image: PropTypes.string,
+  path: PropTypes.string
 };
