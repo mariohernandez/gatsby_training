@@ -21,6 +21,6 @@ const CtaButton = ({ classes, children, ...rest }) => {
 export default CtaButton;
 
 CtaButton.propTypes = {
-  classes: PropTypes.string
+  classes: PropTypes.string,
   children: childrenType
 };
