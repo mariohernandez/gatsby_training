@@ -8,6 +8,7 @@ export const MovieFragment = graphql`
     body {
       value
     }
+    field_promo_sentence
     rating: field_mpaa_rating
     stars: field_average_viewer_rating
     relationships {

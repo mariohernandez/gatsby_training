@@ -23,10 +23,13 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <Hero
         title={featuredNode.title}
+        subtitle={featuredNode.field_promo_sentence}
+        rating={featuredNode.rating}
+        stars={featuredNode.stars}
         image={
           featuredNode.relationships.mainImage.localFile.childImageSharp.fluid
         }
-      ></Hero>
+      />
       {/* Map over groups and pass each group in to the section. */}
       {Object.keys(groups).map((group) => (
         <GenreSection title={group} items={groups[group]} />
