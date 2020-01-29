@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => {
         image={
           featuredNode.relationships.mainImage.localFile.childImageSharp.fluid
         }
-      ></Hero>
+      />
       {/* Map over groups and pass each group in to the section. */}
       {Object.keys(groups).map((group) => (
         <GenreSection title={group} items={groups[group]} />

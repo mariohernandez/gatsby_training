@@ -4,6 +4,7 @@ import Image from 'gatsby-image';
 
 import Heading from '../Heading';
 import Stars from '../Stars';
+import CtaButton from '../CtaButton';
 
 import Rating from '../Rating';
 
@@ -24,7 +25,7 @@ const Hero = ({ title, subtitle, image, rating, stars }) => {
             <Rating rating={rating} classes={styles.rating} />
             <Stars stars={stars} />
           </div>
-          <button>Watch Now</button>
+          <CtaButton>Watch Now</CtaButton>
         </div>
         <Image fluid={image}></Image>
       </div>
