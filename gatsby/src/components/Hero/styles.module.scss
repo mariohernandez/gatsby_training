@@ -1,15 +1,19 @@
 .hero {
-  display: inline-block;
   overflow: hidden;
   width: 100%;
+
   &:hover {
+
     cursor: pointer;
+
     .inner {
       transform: scale(1.05);
+
       &::after {
         opacity: 1;
       }
     }
+
     .content {
       opacity: 1;
     }
@@ -18,13 +22,14 @@
 
 .inner {
   position: relative;
-  transition: all 0.3s;
+  transition: all .3s;
   z-index: 1;
+
   &::after {
     background: linear-gradient(
       45deg,
       rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.6) 75%,
+      rgba(0, 0, 0, .6) 75%,
       rgba(0, 0, 0, 0) 100%
     );
     content: '';
@@ -44,6 +49,10 @@
   position: absolute;
   transition: opacity .3s;
   z-index: 1;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .starAndRatingContainer {
