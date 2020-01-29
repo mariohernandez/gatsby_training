@@ -5,6 +5,7 @@ import Image from 'gatsby-image';
 
 import Rating from '../Rating';
 import Stars from '../Stars';
+import Heading from '../Heading';
 
 import styles from './styles.module.scss';
 
@@ -18,13 +19,13 @@ const GridItem = ({
   children
 }) => {
   return (
-    <div className={styles.gridItem} tabIndex={1}>
+    <Link className={styles.gridItem} to={path} tabIndex={1}>
       <Image fluid={image} />
       <div className={styles.details}>
         <div className={styles.detailsInner}>
-          <Link className={styles.title} to={path}>
+          <Heading classes={styles.title} level={3} styleLevel={4}>
             {title}
-          </Link>
+          </Heading>
           <div className={styles.ratingStarsContainer}>
             <Rating rating={rating} classes={styles.rating} />
             <Stars stars={stars} />
@@ -34,7 +35,7 @@ const GridItem = ({
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
