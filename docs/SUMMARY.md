@@ -19,9 +19,11 @@
 ## CHAPTER 3
 
 * [Creating pages](chapter-3/create-page.md)
-* [createPage function](chapter-3/explain-create-page-function-with-index-page.md)
+* [createPages function](chapter-3/explain-create-page-function-with-index-page.md)
 * [Build the movie detail page](chapter-3/build-movie-detail-page.md)
 * [Creating a template](chapter-3/creating-a-template.md)
+* [Plugin createPages](chapter-3/plugin-createpages.md)
+* [Gatsby Link](chapter-3/gatsby-link.md)
 
 ## CHAPTER 4
 

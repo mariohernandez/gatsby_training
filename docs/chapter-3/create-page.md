@@ -3,8 +3,8 @@
 Creating pages in Gatsby can be done in three ways:
 
 * Static Page creation
-* Using the **createPage** function
-* Using a plugin's **createPage** function
+* Using the **createPages** function
+* Using a plugin's **createPages** function
 
 ### Static Page creation
 
