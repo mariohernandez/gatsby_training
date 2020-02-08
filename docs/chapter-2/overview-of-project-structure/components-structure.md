@@ -16,6 +16,9 @@ gatsby
     │   └── Container
     │       ├── index.js
     │       ├── styles.module.scss
+    ├── global
+    ├── pages
+    ├── templates
 ```
 
 {% hint style="info" %}
