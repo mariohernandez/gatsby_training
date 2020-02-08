@@ -7,17 +7,20 @@
 A typical component structure looks like this:
 
 ```text
-|-- gatsby/
-|   |-- .cache
-|   |-- node_modules/
-|   |-- public/
-|   |-- src/
-|       |-- components/
-|           |-- Container
-|               |-- index.js
-|               |-- styles.module.scss
-|           
+gatsby
+├── .cache
+├── node_modules
+├── public
+└── src
+    ├── components
+    │   └── Container
+    │       ├── index.js
+    │       ├── styles.module.scss
 ```
+
+{% hint style="info" %}
+Read more about Components in React/Gatsby: [https://www.gatsbyjs.org/docs/building-with-components/](https://www.gatsbyjs.org/docs/building-with-components/)
+{% endhint %}
 
 
 
