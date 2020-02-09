@@ -7,6 +7,7 @@
 
 * [What is Gatsby?](chapter-1/what-is-gatsby.md)
 * [What is React?](chapter-1/react.md)
+* [What is JSX](chapter-1/what-is-jsx.md)
 * [What is GraphQL?](chapter-1/graphql.md)
 * [What is Webpack?](chapter-1/webpack.md)
 
