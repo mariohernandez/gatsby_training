@@ -14,7 +14,7 @@ This is only going to work if you have a fairly new computer. According to the [
 * Windows 10 Pro+ \(or equivalent\) with Hyper-V running
 * Linux \(with kernel version 4.x or higher\)
 
-  So far, we have tested only with macOS 10.13 \(High Sierra\) and 10.14 \(Mojave\).
+  So far, we have tested with macOS 10.13 \(High Sierra\) 10.14 \(Mojave\) and 10.15 \(Catalina\).
 
 ## 1. Install Lando and Docker
 
@@ -54,15 +54,15 @@ You can clone or download the repo anywhere in your computer (i.e. Sites, Downlo
 ---
 
 ### Preview your site
-To see Drupal up and running go to http://nitflex.lndo.site/
+To see Drupal up and running go to http://nitflex.lndo.site
 
-Your site's credentials are:  username: `admin`, password: `admin`
+Sign-in from the login page http://nitflex.lndo.site/user/login Your site's credentials are:  username: `admin`, password: `admin`
 
-You should see Drupal's homepage which includes a list of movies with images, title and other text content.
+Navigate back to the homepage http://nitflex.lndo.site and you should see a list of movies with images, title and other text content.
 
 In some instances, depending on your environment, you may need to append port 8000 to the url (i.e. http://nitflex.lndo.site:8000).
 
-To see Gatsby up and running, `cd gatsby && lando npm start`, then Gatsby should be visible at http://gatsby.lndo.site/
+To see Gatsby up and running, `cd gatsby && lando npm start`, then Gatsby should be visible at http://gatsby.lndo.site
 
 
 ### You are done! 🙌 🔥 👊
