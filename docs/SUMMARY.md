@@ -51,3 +51,7 @@
 
 * [Gatsby preview tiers](chapter-7/gatsby-preview.md)
 
+## Resources
+
+* [Resources](resources/resources.md)
+
