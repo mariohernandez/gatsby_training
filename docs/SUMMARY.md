@@ -20,9 +20,9 @@
 ## CHAPTER 3
 
 * [Data sources with Gatsby](chapter-3/data-sources.md)
-* [Connecting a data source](chapter-3/connecting-data-sources.md)
+* [Connecting a data source](chapter-3/connecting-a-data-source.md)
 * [Using the graphql playground](chapter-3/using-graphql-playground.md)
-* [Intro to Getting runtime data from APIs (useEffect or useQuery)](chapter-3/getting-data-from-apis.md)
+* [Intro to Getting runtime data from APIs \(useEffect or useQuery\)](chapter-3/getting-data-from-apis.md)
 
 ## CHAPTER 4
 
@@ -32,7 +32,6 @@
 * [Creating a template](chapter-4/creating-a-template.md)
 * [Plugin createPages](chapter-4/plugin-createpages.md)
 * [Gatsby Link](chapter-4/gatsby-link.md)
-
 
 ## CHAPTER 5
 
@@ -44,11 +43,11 @@
 
 * [Components](chapter-6/components.md)
 * [Layout components](chapter-6/layout-components.md)
-* [Working with CSS in Gatsby (CSS Modules)](chapter-6/working-with-css-in-gatsby.md)
-* [Responsive images(intro)](chapter-6/responsive-images.md)
-* [Advanced getting runtime data from APIs (useEffect or useQuery)](chapter-6/advanced-data-from-apis.md)
-]
+* [Working with CSS in Gatsby \(CSS Modules\)](chapter-6/working-with-css-in-gatsby.md)
+* [Responsive images\(intro\)](chapter-6/responsive-images.md)
+* [Advanced getting runtime data from APIs \(useEffect or useQuery\)](chapter-6/advanced-data-from-apis.md)
 
 ## CHAPTER 7
 
 * [Gatsby preview tiers](chapter-7/gatsby-preview.md)
+
