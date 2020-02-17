@@ -19,18 +19,20 @@
 
 ## CHAPTER 3
 
-* [Creating pages](chapter-3/create-page.md)
-* [createPages function](chapter-3/explain-create-page-function-with-index-page.md)
-* [Build the movie detail page](chapter-3/build-movie-detail-page.md)
-* [Creating a template](chapter-3/creating-a-template.md)
-* [Plugin createPages](chapter-3/plugin-createpages.md)
-* [Gatsby Link](chapter-3/gatsby-link.md)
+* [Data sources with Gatsby](chapter-3/data-sources.md)
+* [Connecting a data source](chapter-3/connecting-data-sources.md)
+* [Using the graphql playground](chapter-3/using-graphql-playground.md)
+* [Intro to Getting runtime data from APIs](chapter-3/getting-data-from-apis.md)
 
 ## CHAPTER 4
 
-* [Connecting a data source](chapter-4/connecting-a-data-source.md)
-* [Adding a GraphQL query](chapter-4/adding-a-graphql-query.md)
-* [Using gatsby-node to create nodes](chapter-4/using-gatsby-node-to-create-nodes.md)
+* [Creating pages](chapter-4/create-page.md)
+* [createPages function](chapter-4/explain-create-page-function-with-index-page.md)
+* [Build the movie detail page](chapter-4/build-movie-detail-page.md)
+* [Creating a template](chapter-4/creating-a-template.md)
+* [Plugin createPages](chapter-4/plugin-createpages.md)
+* [Gatsby Link](chapter-4/gatsby-link.md)
+
 
 ## CHAPTER 5
 
@@ -49,4 +51,3 @@
 * [Adding scripts  using gatsby ssr](chapter-7/adding-scripts-using-gatsby-ssr.md)
 * [Getting runtime data from apis useeffect or usequery](chapter-7/getting-runtime-data-from-apis-useeffect-or-usequery.md)
 * [Working with images](chapter-7/working-with-images.md)
-
