@@ -43,7 +43,7 @@
 ## CHAPTER 6
 
 * [Components](chapter-6/components.md)
-* [Components](chapter-6/layout-components.md)
+* [Layout components](chapter-6/layout-components.md)
 * [Working with CSS in Gatsby (CSS Modules)](chapter-6/working-with-css-in-gatsby.md)
 * [Responsive images(intro)](chapter-6/responsive-images.md)
 * [Advanced getting runtime data from APIs (useEffect or useQuery)](chapter-6/advanced-data-from-apis.md)
