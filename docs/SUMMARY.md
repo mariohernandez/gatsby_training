@@ -22,7 +22,7 @@
 * [Data sources with Gatsby](chapter-3/data-sources.md)
 * [Connecting a data source](chapter-3/connecting-data-sources.md)
 * [Using the graphql playground](chapter-3/using-graphql-playground.md)
-* [Intro to Getting runtime data from APIs](chapter-3/getting-data-from-apis.md)
+* [Intro to Getting runtime data from APIs (useEffect or useQuery)](chapter-3/getting-data-from-apis.md)
 
 ## CHAPTER 4
 
@@ -38,16 +38,17 @@
 
 * [Extending Gatsby with plugins](chapter-5/extending-gatsby-with-plugins.md)
 * [Installing and configuring a source plugin](chapter-5/installing-and-configuring-a-source-plugin.md)
+* [Adding scripts using gatsby-ssr](chapter-5/adding-scripts-gatsby-ssr.md)
 
 ## CHAPTER 6
 
 * [Components](chapter-6/components.md)
-* [Working with CSS in Gatsby](chapter-6/working-with-css-in-gatsby.md)
+* [Components](chapter-6/layout-components.md)
+* [Working with CSS in Gatsby (CSS Modules)](chapter-6/working-with-css-in-gatsby.md)
+* [Responsive images(intro)](chapter-6/responsive-images.md)
+* [Advanced getting runtime data from APIs (useEffect or useQuery)](chapter-6/advanced-data-from-apis.md)
+]
 
 ## CHAPTER 7
 
-* [Gatsby preview](chapter-7/gatsby-preview.md)
-* [Creating a template](chapter-7/creating-a-template.md)
-* [Adding scripts  using gatsby ssr](chapter-7/adding-scripts-using-gatsby-ssr.md)
-* [Getting runtime data from apis useeffect or usequery](chapter-7/getting-runtime-data-from-apis-useeffect-or-usequery.md)
-* [Working with images](chapter-7/working-with-images.md)
+* [Gatsby preview tiers](chapter-7/gatsby-preview.md)
