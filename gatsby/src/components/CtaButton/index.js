@@ -5,16 +5,23 @@ import styles from './style.module.scss';
 
 import { childrenType } from '../../global/js/customPropTypes';
 
-const CtaButton = ({ classes, children, ...rest }) => {
+const CtaButton = ({ classes, url, children, buttonType, ...rest }) => {
+  const buttonClass = classnames(styles.ctaButton, {
+    [styles.primary]: buttonType === 'primary',
+  })
   return (
-    <button
-      className={classnames(styles.ctaButton, {
-        [`${classes}`]: classes
-      })}
+    <>
+    {url ? (
+      <a className={buttonClass} {...rest} href={url}>{children}</a>
+    ):(
+      <button
+      className={buttonClass}
       {...rest}
     >
       {children}
     </button>
+    )}
+    </>
   );
 };
 
@@ -22,5 +29,6 @@ export default CtaButton;
 
 CtaButton.propTypes = {
   classes: PropTypes.string,
+  buttonClass: PropTypes.oneOf(['primary']),
   children: childrenType
 };
