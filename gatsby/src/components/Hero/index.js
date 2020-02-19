@@ -28,7 +28,7 @@ const Hero = ({ title, subtitle, image, rating, stars, path }) => {
             <Rating rating={rating} classes={styles.rating} />
             <Stars stars={stars} />
           </div>
-          <CtaButton>Watch Now</CtaButton>
+          <CtaButton buttonType="primary">Watch Now</CtaButton>
         </div>
         <Image fluid={image}></Image>
       </div>

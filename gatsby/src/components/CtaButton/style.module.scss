@@ -1,11 +1,31 @@
 @import '../../global/styles/init';
 
 .ctaButton {
-  background: transparent;
-  border: 2px solid $color-cardinal;
-  border-radius: 25px;
+  background-color: $color-black;
+  border: 2px solid $color-tundora;
+  border-radius: 44px;
   color: $color-white;
+  cursor: pointer;
+  display: inline-block;
   font-family: $font-primary;
-  min-width: 200px;
-  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 40px;
+  text-decoration: none;
+  transition: border 0.125s ease, background-color 0.125s ease;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    border-color: $color-white;
+  }
+
+  &.primary {
+    border-color: $color-bright-red;
+
+    &:hover,
+    &:focus {
+      background: $color-bright-red;
+    }
+  }
 }
