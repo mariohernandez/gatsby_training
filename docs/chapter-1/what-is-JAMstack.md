@@ -8,7 +8,7 @@ With the rise of git-centric workflows, continuous delivery, and the overall pop
 
 **Security**
 Static sites have very little vulnerabilities since they have minimal points of entry for attacks.
-All the dynamic functionality is handled externality with APIs.
+All the dynamic functionality is handled externally with APIs.
 
 **Better Performance**
 Monolithic origins that require builds for every visitor can have have poor performance results.
