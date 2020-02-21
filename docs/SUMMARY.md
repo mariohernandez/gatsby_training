@@ -10,6 +10,7 @@
 * [What is JSX](chapter-1/what-is-jsx.md)
 * [What is GraphQL?](chapter-1/graphql.md)
 * [What is Webpack?](chapter-1/webpack.md)
+* [What is JAMstack?](chapter-1/what-is-JAMstack.md)
 
 ## CHAPTER 2
 
