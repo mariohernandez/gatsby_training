@@ -1,2 +1,2 @@
-# Gatsby preview
+# Gatsby preview tiers
 

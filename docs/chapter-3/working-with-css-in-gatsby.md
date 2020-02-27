@@ -1,2 +1,2 @@
-# Working with CSS in Gatsby
+# Working with CSS in Gatsby \(CSS Modules\)
 

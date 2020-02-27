@@ -1,2 +1,2 @@
-# Connecting a data source
+# Data sources with Gatsby
 

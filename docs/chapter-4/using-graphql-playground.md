@@ -1,2 +1,2 @@
-# Adding a GraphQL query
+# Using the graphql playground
 

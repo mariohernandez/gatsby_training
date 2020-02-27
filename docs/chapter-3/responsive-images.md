@@ -1,0 +1,2 @@
+# Responsive images\(intro\)
+
