@@ -20,32 +20,32 @@
 
 ## CHAPTER 3
 
-* [Data sources with Gatsby](chapter-3/data-sources.md)
-* [Connecting a data source](chapter-3/connecting-a-data-source.md)
-* [Using the graphql playground](chapter-3/using-graphql-playground.md)
-* [Intro to Getting runtime data from APIs \(useEffect or useQuery\)](chapter-3/getting-data-from-apis.md)
+* [Components](chapter-3/components.md)
+* [Layout components](chapter-3/layout-components.md)
+* [Working with CSS in Gatsby \(CSS Modules\)](chapter-3/working-with-css-in-gatsby.md)
+* [Responsive images\(intro\)](chapter-3/responsive-images.md)
 
 ## CHAPTER 4
 
-* [Creating pages](chapter-4/create-page.md)
-* [createPages function](chapter-4/explain-create-page-function-with-index-page.md)
-* [Build the movie detail page](chapter-4/build-movie-detail-page.md)
-* [Creating a template](chapter-4/creating-a-template.md)
-* [Plugin createPages](chapter-4/plugin-createpages.md)
-* [Gatsby Link](chapter-4/gatsby-link.md)
+* [Data sources with Gatsby](chapter-4/data-sources.md)
+* [Connecting a data source](chapter-4/connecting-a-data-source.md)
+* [Using the graphql playground](chapter-4/using-graphql-playground.md)
+* [Intro to Getting runtime data from APIs \(useEffect or useQuery\)](chapter-4/getting-data-from-apis.md)
 
 ## CHAPTER 5
 
-* [Extending Gatsby with plugins](chapter-5/extending-gatsby-with-plugins.md)
-* [Installing and configuring a source plugin](chapter-5/installing-and-configuring-a-source-plugin.md)
-* [Adding scripts using gatsby-ssr](chapter-5/adding-scripts-gatsby-ssr.md)
+* [Creating pages](chapter-5/create-page.md)
+* [createPages function](chapter-5/explain-create-page-function-with-index-page.md)
+* [Build the movie detail page](chapter-5/build-movie-detail-page.md)
+* [Creating a template](chapter-5/creating-a-template.md)
+* [Plugin createPages](chapter-5/plugin-createpages.md)
+* [Gatsby Link](chapter-5/gatsby-link.md)
 
 ## CHAPTER 6
 
-* [Components](chapter-6/components.md)
-* [Layout components](chapter-6/layout-components.md)
-* [Working with CSS in Gatsby \(CSS Modules\)](chapter-6/working-with-css-in-gatsby.md)
-* [Responsive images\(intro\)](chapter-6/responsive-images.md)
+* [Extending Gatsby with plugins](chapter-6/extending-gatsby-with-plugins.md)
+* [Installing and configuring a source plugin](chapter-6/installing-and-configuring-a-source-plugin.md)
+* [Adding scripts using gatsby-ssr](chapter-6/adding-scripts-gatsby-ssr.md)
 * [Advanced getting runtime data from APIs \(useEffect or useQuery\)](chapter-6/advanced-data-from-apis.md)
 
 ## CHAPTER 7
