@@ -3,16 +3,7 @@
   width: 100%;
 
   &:hover {
-
     cursor: pointer;
-
-    .inner {
-      transform: scale(1.05);
-
-      &::after {
-        opacity: 1;
-      }
-    }
 
     .content {
       opacity: 1;
@@ -22,7 +13,7 @@
 
 .inner {
   position: relative;
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: 1;
 
   &::after {
@@ -39,6 +30,7 @@
     position: absolute;
     top: 0;
     width: 100%;
+    opacity: 0.5;
   }
 }
 
