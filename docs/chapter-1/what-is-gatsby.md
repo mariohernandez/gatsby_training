@@ -8,6 +8,27 @@ Gatsby is a [React](https://reactjs.org/docs/getting-started.html)-based, [Graph
 2. The richness of the Gatsby ecosystem is unique. Gatsby boasts great documentation, and a number of starters to help you get a site up quickly.  That GraphQL data collection I mentioned before may sound intimidating, but due to Gatsby's well-documented [data source plugins](https://www.gatsbyjs.org/plugins/), it can be as simple as a few lines of code in the config file.
 3. Dedication to performance. Every aspect of performance and accessibility is a point of emphasis, and you can really feel that in the final product with Gatsby.
 
+## Overview of the Gatsby Build Process
+
+Gatsby has two modes for compiling a site:
+1. Develop - run with the `gatsby develop` command
+2. Build - run with `gatsby build`
+
+You can start Gatsby in either mode with its respective command: gatsby develop or gatsby build.
+
+## Build time vs runtime
+
+Interaction with the front-end after a build has completed can be referred to as runtime.
+Gatsby creates a JavaScript runtime that takes over in the browser once the initial HTML has loaded. This makes it possible to run ajax callbacks and inject markup into the DOM.
+
+## Understanding gatsby build (build time)
+
+Gatsby’s build command should be run when you've added the finishing touches to your site and everything looks great. Gatsby build creates a version of your site with production-ready optimizations like packaging up your site’s config, data, and code, and creating all the static HTML pages that eventually get rehydrated into a React application.
+
+## Differences between develop and build
+
+If you compare the outputs of the two commands (gatsby develop vs gatsby build), you can see that everything (with the exception of deleting HTML and CSS files) up until the line that says info bootstrap finished are the same. However, gatsby build runs some additional steps to prepare your site to go live after the bootstrap phase.
+
 ![Gatsby development workflow](../.gitbook/assets/gatsbyjs.png)
 
 {% hint style="info" %}
