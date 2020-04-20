@@ -1,0 +1,27 @@
+@import '../../global/styles/init';
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: $color-white;
+  padding-top: 15px;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: $font-primary;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 15px;
+
+  &.favorited {
+    color: red;
+  }
+}

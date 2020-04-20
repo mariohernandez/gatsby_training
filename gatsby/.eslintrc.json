@@ -45,7 +45,6 @@
     "new-cap": [2],
     "no-unused-vars": [1],
     "one-var": [2, "never"],
-    "brace-style": [2, "stroustrup"],
     "valid-jsdoc": [2],
     "block-scoped-var": [1],
     "curly": [2],
