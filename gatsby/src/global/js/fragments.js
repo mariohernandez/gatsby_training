@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 export const MovieFragment = graphql`
   fragment MovieFragment on node__movie {
+    id
     path {
       alias
     }

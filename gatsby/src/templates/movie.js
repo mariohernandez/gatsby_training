@@ -1,10 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Image from 'gatsby-image';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import Details from '../components/Details';
-import Heading from '../components/Heading';
+import AddToFavorite from '../components/AddToFavorite';
 
 const MovieTemplate = ({ data }) => {
   const { movie } = data;
@@ -18,6 +17,7 @@ const MovieTemplate = ({ data }) => {
         image={movie.relationships.mainImage.localFile.childImageSharp.fluid}
         path={movie.path.alias}
       />
+      <AddToFavorite id={movie.id} />
       <Details>{movie.body.value}</Details>
     </Layout>
   );
