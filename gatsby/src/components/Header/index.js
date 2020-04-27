@@ -1,4 +1,4 @@
-import { Link, useStaticQuery } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => {
           <img
             className={styles.logo}
             src={data.allFile.nodes[0].publicURL}
-            alt="Nitflex logo"
+            alt={siteTitle}
           />
         </Link>
       </Container>
