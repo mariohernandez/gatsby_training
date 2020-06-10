@@ -2,42 +2,31 @@
 @import '../../global/styles/init';
 
 .heading {
-  color: $color-white;
-  font-family: $font-primary;
-  font-weight: $font-weight-bold;
-  line-height: 1.3;
-}
-
-.primary {
-  @include font-primary;
-}
-
-.secondary {
-  @include font-secondary;
+  color: var(--color-white-out);
 }
 
 .level1 {
-  @include font-size-heading1
+  @include title-mega;
 }
 
 .level2 {
-  @include font-size-heading2
+  @include title-large;
 }
 
 .level3 {
-  @include font-size-heading3
+  @include title-medium;
 }
 
 .level4 {
-  @include font-size-heading4
+  @include title-small;
 }
 
 .level5 {
-  @include font-size-heading5
+  @include title-xsmall;
 }
 
 .level6 {
-  @include font-size-heading6
+  @include title-xxsmall;
 }
 
 .uppercase {

@@ -3,11 +3,10 @@
 .container {
   display: flex;
   justify-content: flex-end;
-  background-color: $color-white;
   padding-top: 15px;
   padding-left: 10%;
   padding-right: 10%;
-  font-family: $font-primary;
+  background-color: var(--color-white-out);
 }
 
 .button {
@@ -22,6 +21,6 @@
   margin-right: 15px;
 
   &.favorited {
-    color: red;
+    color: var(--color-original-87);
   }
 }

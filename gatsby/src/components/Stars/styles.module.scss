@@ -1,21 +1,21 @@
 @import '../../global/styles/init';
 
 .container {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .stars {
   display: flex;
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .star {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 
   + .star {
     margin-left: 5px;
@@ -26,18 +26,18 @@
     width: 20px;
 
     polygon {
-      fill: $color-silver;
+      fill: var(--color-limestone);
     }
 
     polyline {
-      fill: $color-white;
+      fill: var(--color-white-out);
     }
   }
 }
 
 .star.active {
   svg polyline {
-    fill: $color-rio-grande;
+    fill: var(--color-bright-keystone);
   }
 }
 

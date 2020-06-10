@@ -24,22 +24,21 @@
       rgba(0, 0, 0, 0) 100%
     );
     content: '';
-    height: 100%;
-    left: 0;
-    opacity: 0;
     position: absolute;
+    height: 100%;
     top: 0;
+    left: 0;
     width: 100%;
     opacity: 0.5;
   }
 }
 
 .content {
+  position: absolute;
   height: 100%;
   padding: 5%;
-  position: absolute;
-  transition: opacity .3s;
   z-index: 1;
+  transition: opacity .3s;
 }
 
 .link {
@@ -47,8 +46,8 @@
 }
 
 .starAndRatingContainer {
-  align-items: center;
   display: flex;
+  align-items: center;
   margin-bottom: 15px;
 }
 

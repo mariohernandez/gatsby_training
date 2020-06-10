@@ -1,7 +1,90 @@
 
 @import 'normalize';
-@import 'base';
 @import 'breakpoints';
 @import 'colors';
 @import 'typography';
 @import 'mixins';
+@import 'base';
+
+// CSS Variables
+// Put all variables here to prevent importing duplication.
+:root {
+  // Typography
+  --font-family-sans: 'Roboto', sans-serif;
+  --font-family-serif: 'Roboto Slab', sans-serif;
+  --font-family-condensed: 'Roboto Condensed', sans-serif;
+
+  --font-weight-xbold: 900;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+
+  // XD uses letter spacing based on 'milli-ems'.
+  // We need to translate the value provided, which is the last number.
+  --font-ls-xxsmall: calc(-1rem * 0.001 * 15);
+  --font-ls-xsmall: calc(-1rem * 0.001 * 10);
+  --font-ls-small: calc(-1rem * 0.001 * 5);
+  --font-ls-medium: 0;
+  --font-ls-large: calc(1rem * 0.001 * 5);
+  --font-ls-xlarge: calc(1rem * 0.001 * 10);
+  --font-ls-xxlarge: calc(1rem * 0.001 * 15);
+  --font-ls-mega: calc(1rem * 0.001 * 30);
+
+  // Colors
+  // Use the variable modifier 'var(--color-name--rgb)' to use
+  // color transparency.
+  --color-endless-potential: #{$color-endless-potential};
+  --color-endless-potential--rgb: #{derive-rgb-values-from-hex($color-endless-potential)};
+  --color-nittany-navy: #{$color-nittany-navy};
+  --color-nittany-navy--rgb: #{derive-rgb-values-from-hex($color-nittany-navy)};
+  --color-beaver-blue: #{$color-beaver-blue};
+  --color-beaver-blue--rgb: #{derive-rgb-values-from-hex($color-beaver-blue)};
+  --color-old-coaly: #{$color-old-coaly};
+  --color-old-coaly--rgb: #{derive-rgb-values-from-hex($color-old-coaly)};
+  --color-white-out: #{$color-white-out};
+  --color-white-out--rgb: #{derive-rgb-values-from-hex($color-white-out)};
+
+  --color-creek: #{$color-creek};
+  --color-creek--rgb: #{derive-rgb-values-from-hex($color-creek)};
+  --color-creek-light: #{$color-creek-light};
+  --color-creek-light--rgb: #{derive-rgb-values-from-hex($color-creek-light)};
+  --color-creek-max-light: #{$color-creek-max-light};
+  --color-creek-max-light--rgb: #{derive-rgb-values-from-hex($color-creek-max-light)};
+  --color-limestone: #{$color-limestone};
+  --color-limestone--rgb: #{derive-rgb-values-from-hex($color-limestone)};
+  --color-limestone-light: #{$color-limestone-light};
+  --color-limestone-light--rgb: #{derive-rgb-values-from-hex($color-limestone-light)};
+  --color-limestone-max-light: #{$color-limestone-max-light};
+  --color-limestone-max-light--rgb: #{derive-rgb-values-from-hex($color-limestone-max-light)};
+  --color-slate: #{$color-slate};
+  --color-slate--rgb: #{derive-rgb-values-from-hex($color-slate)};
+  --color-slate-light: #{$color-slate-light};
+  --color-slate-light--rgb: #{derive-rgb-values-from-hex($color-slate-light)};
+  --color-slate-max-light: #{$color-slate-max-light};
+  --color-slate-max-light--rgb: #{derive-rgb-values-from-hex($color-slate-max-light)};
+  --color-lion-shrine: #{$color-lion-shrine};
+  --color-lion-shrine--rgb: #{derive-rgb-values-from-hex($color-lion-shrine)};
+  --color-lion-shrine-light: #{$color-lion-shrine-light};
+  --color-lion-shrine-light--rgb: #{derive-rgb-values-from-hex($color-lion-shrine-light)};
+  --color-lion-shrine-max-light: #{$color-lion-shrine-max-light};
+  --color-lion-shrine-max-light--rgb: #{derive-rgb-values-from-hex($color-lion-shrine-max-light)};
+  --color-pa-sky: #{$color-pa-sky};
+  --color-pa-sky--rgb: #{derive-rgb-values-from-hex($color-pa-sky)};
+  --color-lions-roar: #{$color-lions-roar};
+  --color-lions-roar--rgb: #{derive-rgb-values-from-hex($color-lions-roar)};
+  --color-lions-roar-light: #{$color-lions-roar-light};
+  --color-lions-roar-light--rgb: #{derive-rgb-values-from-hex($color-lions-roar-light)};
+  --color-lions-roar-max-light: #{$color-lions-roar-max-light};
+  --color-lions-roar-max-light--rgb: #{derive-rgb-values-from-hex($color-lions-roar-max-light)};
+
+  --color-pa-link: #{$color-pa-link};
+  --color-pa-link--rgb: #{derive-rgb-values-from-hex($color-pa-link)};
+  --color-pa-link-light: #{$color-pa-link-light};
+  --color-pa-link-light--rgb: #{derive-rgb-values-from-hex($color-pa-link-light)};
+  --color-original-87: #{$color-original-87};
+  --color-original-87--rgb: #{derive-rgb-values-from-hex($color-original-87)};
+  --color-bright-keystone: #{$color-bright-keystone};
+  --color-bright-keystone--rgb: #{derive-rgb-values-from-hex($color-bright-keystone)};
+  --color-button-hover: #{$color-button-hover};
+  --color-futures-calling: #{$color-futures-calling};
+  --color-futures-calling--rgb: #{derive-rgb-values-from-hex($color-futures-calling)};
+}

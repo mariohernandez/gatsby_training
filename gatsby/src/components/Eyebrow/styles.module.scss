@@ -1,8 +1,9 @@
+@import '../../global/styles/init';
+
 .eyebrow {
+  @include title-medium;
   display: inline-block;
-  letter-spacing: .15rem;
-  line-height: 1;
-  text-transform: uppercase;
   white-space: nowrap;
   margin-bottom: 1rem;
+  color: var(--color-nittany-navy);
 }

@@ -1,16 +1,34 @@
-$color-black: #000;
-$color-white: #fff;
-$color-cardinal: #b81c25;
-$color-bright-red: #b81d24;
-$color-pacific-blue: #0099cc;
-$color-rio-grande: #c4d600;
-$color-oslo-gray: #888b8d;
-$color-white: #FFF;
-$color-black: #000;
+//===========================
+// Colors
+//===========================
+$color-endless-potential: #000321;
+$color-nittany-navy: #001E44;
+$color-beaver-blue: #1E407C;
+$color-white-out: #FFFFFF;
+$color-old-coaly: #444444;
+$color-creek: #3EA39E;
+$color-creek-light: #CFECEB;
+$color-creek-max-light: #EDF8F7;
+$color-limestone: #A2AAAD;
+$color-limestone-light: #E4E5E7;
+$color-limestone-max-light: #F2F2F4;
+$color-slate: #314D64;
+$color-slate-light: #CCDAE6;
+$color-slate-max-light: #EEF3F7;
+$color-lion-shrine: #B88965;
+$color-lion-shrine-light: #F7F2EE;
+$color-lion-shrine-max-light: #FDFBF5;
+$color-pa-sky: #009CDE;
+$color-lions-roar: #BF8226;
+$color-lions-roar-light: #F9EDDC;
+$color-lions-roar-max-light: #FFFAF2;
 
-// Grays
-$color-tundora: #464646;
-$color-silver: #bbb;
-$color-alto: #ddd;
-$color-gallery: #eee;
-$color-alabaster: #f7f7f7;
+// Elements
+$color-pa-link: #005FA9;
+$color-pa-link-light: #CCF0FF;
+$color-button-hover: linear-gradient(to bottom, var(--color-pa-sky), var(--color-beaver-blue));
+
+// Alerts
+$color-original-87: #BC204B;
+$color-bright-keystone: #FFD100;
+$color-futures-calling: #99CC00;
