@@ -1,81 +1,205 @@
-$font-primary: 'Helvetica', sans-serif;
-$font-secondary: 'Times New Roman', serif;
+//===========================
+// Typography
+//===========================
+@import 'breakpoints';
 
-@mixin font-primary {
-  font-family: $font-primary;
-}
-
-@mixin font-secondary {
-  font-family: $font-secondary;
-}
-
-// Font weight vars.
-$font-weight-bold: 700;
-$font-weight-normal: 400;
-$font-weight-light: 300;
-
-// Global styles for headings.
-// Font size setup to be 10px = 1rem.
-@mixin font-size-heading1 {
-  font-size: 3.6rem;
-
-  @include breakpoint($bp-xsm) {
-    font-size: 5.5rem;
-  }
+// Titles
+@mixin title-mega {
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: var(--font-weight-xbold);
+  letter-spacing: var(--font-ls-xsmall);
+  font-family: var(--font-family-sans);
 
   @include breakpoint($bp-md) {
-    font-size: 7rem;
+    font-size: 74px;
+    line-height: 76px;
+    letter-spacing: var(--font-ls-large);
   }
 }
 
-@mixin font-size-heading2 {
-  font-size: 2.8rem;
-
-  @include breakpoint($bp-xsm) {
-    font-size: 3.6rem;
-  }
+@mixin title-xxlarge {
+  font-size: 34px;
+  line-height: 38px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-ls-xsmall);
+  font-family: var(--font-family-sans);
 
   @include breakpoint($bp-md) {
-    font-size: 4.2rem;
+    font-size: 70px;
+    line-height: 72px;
+    letter-spacing: var(--font-ls-large);
   }
 }
 
-@mixin font-size-heading3 {
-  font-size: 2rem;
-
-  @include breakpoint($bp-xsm) {
-    font-size: 2.2rem;
-  }
-
-  @include breakpoint($bp-xsm) {
-    font-size: 2.6rem;
-  }
-}
-
-@mixin font-size-heading4 {
-  font-size: 1.6rem;
-
-  @include breakpoint($bp-xsm) {
-    font-size: 1.6rem;
-  }
+@mixin title-xlarge {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-ls-medium);
+  font-family: var(--font-family-sans);
 
   @include breakpoint($bp-md) {
-    font-size: 2rem;
-  }
-}
-// CHEEZ-76 ends at h4.
-@mixin font-size-heading5 {
-  font-size: 1rem;
-
-  @include breakpoint($bp-xsm) {
-    font-size: 1.25rem;
+    font-size: 55px;
+    line-height: 59px;
+    letter-spacing: var(--font-ls-large);
   }
 }
 
-@mixin font-size-heading6 {
-  font-size: 1rem;
+@mixin title-large {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-ls-medium);
+  font-family: var(--font-family-sans);
 
-  @include breakpoint($bp-xsm) {
-    font-size: 1rem;
+  @include breakpoint($bp-md) {
+    font-size: 42px;
+    line-height: 44px;
+  }
+}
+
+@mixin title-medium {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-ls-xxlarge);
+  font-family: var(--font-family-sans);
+
+  @include breakpoint($bp-md) {
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: var(--font-ls-medium);
+  }
+}
+
+@mixin title-small {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-ls-medium);
+  font-family: var(--font-family-sans);
+
+  @include breakpoint($bp-md) {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+@mixin title-xsmall {
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-ls-mega);
+  font-family: var(--font-family-sans);
+
+  @include breakpoint($bp-md) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@mixin title-xxsmall {
+  font-size: 16x;
+  line-height: 18px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-ls-mega);
+  font-family: var(--font-family-sans);
+}
+
+// Body
+@mixin body-xxlarge {
+  font-size: 25px;
+  line-height: 29px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-ls-xxsmall);
+  font-family: var(--font-family-sans);
+
+  @include breakpoint($bp-md) {
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: var(--font-ls-medium);
+  }
+}
+
+@mixin body-xlarge {
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-ls-xsmall);
+  font-family: var(--font-family-sans);
+
+  @include breakpoint($bp-md) {
+    font-size: 33px;
+    line-height: 39px;
+    letter-spacing: var(--font-ls-medium);
+  }
+}
+
+@mixin body-large {
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--font-ls-xsmall);
+  font-family: var(--font-family-sans);
+
+  @include breakpoint($bp-md) {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: var(--font-ls-medium);
+  }
+}
+
+@mixin body-medium {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--font-ls-xxsmall);
+  font-family: var(--font-family-sans);
+
+  @include breakpoint($bp-md) {
+    font-size: 23px;
+    line-height: 33px;
+    letter-spacing: var(--font-ls-medium);
+  }
+}
+
+@mixin body-small {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--font-ls-small);
+  font-family: var(--font-family-sans);
+
+  @include breakpoint($bp-md) {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: var(--font-ls-medium);
+  }
+}
+
+@mixin body-xsmall {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--font-ls-small);
+  font-family: var(--font-family-sans);
+
+  @include breakpoint($bp-md) {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: var(--font-ls-medium);
+  }
+}
+
+@mixin body-xxsmall {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--font-ls-small);
+  font-family: var(--font-family-sans);
+
+  @include breakpoint($bp-md) {
+    letter-spacing: var(--font-ls-xlarge);
   }
 }

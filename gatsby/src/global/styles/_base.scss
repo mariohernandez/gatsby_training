@@ -4,6 +4,7 @@ html {
 }
 
 body {
-  background-color: black;
-  font-size: 1.8rem;
+  @include body-xxsmall;
+  margin: 0;
+  color: var(--color-old-coaly);
 }

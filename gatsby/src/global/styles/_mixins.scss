@@ -13,3 +13,40 @@
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+// Convert a hex value to comma-delimited rgb values.
+// We use this as a fallback to our color variables
+// for things like RGBA opacity.
+@function derive-rgb-values-from-hex($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+@mixin gradient-button {
+  --padding-y: 4px;
+
+  @include title-small;
+  font-style: italic;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  padding: var(--padding-y) 44px;
+  border: 2px solid var(--color-pa-link-light);
+  transition: 1s background-image;
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      transparent
+    )
+  ;
+  color: var(--color-pa-link-light);
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: white;
+    background-image: $color-button-hover;
+  }
+}

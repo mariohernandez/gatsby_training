@@ -20,6 +20,25 @@ module.exports = {
       options: {
         baseUrl: 'http://nitflex.lndo.site/'
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: 'Roboto',
+            variants: ['900, 700, 400']
+          },
+          {
+            family: 'Roboto Slab',
+            variants: ['700, 400']
+          },
+          {
+            family: 'Roboto Condensed',
+            variants: ['700, 400']
+          }
+        ]
+      }
+    },
   ]
 };

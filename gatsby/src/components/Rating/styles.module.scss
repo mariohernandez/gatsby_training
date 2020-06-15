@@ -1,15 +1,12 @@
 @import '../../global/styles/init';
 
 .rating {
-  @include font-secondary;
-  border: 1px solid $color-white;
-  color: $color-white;
-  font-size: 1.6rem;
-  font-weight: $font-weight-bold;
-  line-height: 1;
-  overflow: hidden;
+  @include body-xxsmall;
   position: relative;
   padding: 10px;
+  border: 1px solid var(--color-white-out);
+  color: var(--color-white-out);
+  overflow: hidden;
 }
 
 .text {
