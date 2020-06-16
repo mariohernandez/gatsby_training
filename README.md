@@ -3,6 +3,13 @@ A training workshop by [Mediacurrent](https://mediacurrent.com).
 
 ## Getting Started
 This repo will allow you to get the codebase to build a new Gatsby website which has been configured to pull its content from Drupal running at Pantheon.
+
+### Requirements
+* NVM
+* NodeJS & NPM
+
+**Instructions for installing NVM, Node & NPM on** [macOS](https://medium.com/@jamesauble/install-nvm-on-mac-with-brew-adb921fb92cc) or [Windows](https://codeburst.io/nvm-for-windows-how-to-install-and-use-13b7a4209791).
+
 <!-- This repo includes everything you need to set up a [Lando-based](https://docs.devwithlando.io/) environment.  Lando is a free, open source, cross-platform, local development environment tool built on Docker container technology. -->
 
 <!-- ### Prerequisites
@@ -42,6 +49,7 @@ cd gatsby-training/gatsby
 ```
 npm install
 ```
+_If you get errors, you can try running:_ `nvm install` then `nvm use`.
 ```
 npm start
 ```
