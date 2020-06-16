@@ -33,7 +33,7 @@ This setup includes Drupal and Gatsby, but for the purpose of this training you 
 
 <!-- **WINDOWS USERS:**  Use Power Shell to run all commands. -->
 
-1. After cloning the repo, cd into the newly created diectory:
+After cloning the repo, cd into the newly created diectory:
 ```
 cd gatsby-training/gatsby
 ```
