@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-drupal',
       options: {
-        baseUrl: 'http://nitflex.lndo.site/'
+        baseUrl: 'https://dev-psutraining.pantheonsite.io/'
       }
     },
     {
@@ -39,6 +39,6 @@ module.exports = {
           }
         ]
       }
-    },
+    }
   ]
 };
