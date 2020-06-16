@@ -21,14 +21,14 @@ Follow the instructions below to setup your local dev environment.
 * [Install Lando and Docker](https://github.com/lando/lando/releases) (Select latest version) -->
 
 
-## 2. Clone this repo anywhere in you local system
+## 1. Clone this repo anywhere in you local system
 You can clone or download the repo anywhere in your computer (i.e. Sites, Downloads, Documents, Desktop, etc.).  To clone the repo, run this command:
 
 ```
 git clone git@github.com:mediacurrent/gatsby-training.git
 ```
 
-## 3. Build the environment:
+## 2. Build the environment:
 This setup includes Drupal and Gatsby, but for the purpose of this training you only need to run Gatsby since we will be running Drupal from Pantheon.
 
 <!-- **WINDOWS USERS:**  Use Power Shell to run all commands. -->
@@ -63,7 +63,7 @@ _This will start Gatsby which should immediately connect to Drupal to pull all c
 
 ---
 
-## Access your Gatsby and Drupal sites
+## 3. Access your Gatsby and Drupal sites
 
 ### Gatsby:
 http://localhost:8000/
