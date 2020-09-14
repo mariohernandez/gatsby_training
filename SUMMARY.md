@@ -16,26 +16,26 @@
 
 ## Chapter 3
 
-* [Create Page Function](chapter-3/create-page.md)
+* [Create Page Function](chapter-3/create-page-function.md)
 * [Create Page Explained](chapter-3/create-page-explained.md)
 * [Creating a template](chapter-3/creating-a-template.md)
 
 ## Chapter 4
 
-* [Data sources](chapter-4/connecting-a-data-source.md)
+* [Data sources](chapter-4/data-sources.md)
 * [GraphQL](chapter-4/graphql.md)
 * [Adding a GraphQL query](chapter-4/adding-a-graphql-query.md)
 * [Using gatsby-node to create nodes](chapter-4/using-gatsby-node-to-create-nodes.md)
 
 ## Chapter 5
 
-* [Gatsby plugins](chapter-5/extending-gatsby-with-plugins.md)
+* [Gatsby plugins](chapter-5/gatsby-plugins.md)
 * [Installing  a source plugin](chapter-5/installing-a-source-plugin.md)
 
 ## Chapter 6
 
 * [Components](chapter-6/components.md)
-* [Working with CSS](chapter-6/working-with-css-in-gatsby.md)
+* [Working with CSS](chapter-6/working-with-css.md)
 
 ## CHAPTER 7
 
