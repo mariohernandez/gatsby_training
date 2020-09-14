@@ -13,7 +13,7 @@
 
 ## Chapter 2
 
-* [Build your first Gatsby Site](chapter-2/build-your-first-gatsby-site.md)
+* [Build your first Gatsby site](chapter-2/build-your-first-gatsby-site.md)
 * [Project Structure Overview](chapter-2/project-structure-overview.md)
 
 ## Chapter 3
@@ -43,4 +43,3 @@
 * [Working with Images](chapter-7/working-with-images.md)
 * [Adding scripts using gatsby-ssr](chapter-7/adding-scripts-using-gatsby-ssr.md)
 * [Getting runtime data from APIs \(useEffect or useQuery\)](chapter-7/getting-runtime-data-from-apis-useeffect-or-usequery.md)
-
