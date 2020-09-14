@@ -1,4 +1,4 @@
-# Build your first Gatsby site
+# Build your first Gatsby Site
 
 ## Gatsby CLI <a id="docs-internal-guid-337bec8f-7fff-6cb1-6ffc-7492002cd7e0"></a>
 
@@ -27,3 +27,4 @@ Install this starter locally by running the following in your command line:
 Open up a new tab in your browser and navigate to [http://localhost:8000](http://localhost:8000/).
 
 BAM! You’ve just created your first Gatsby site! 🌮
+

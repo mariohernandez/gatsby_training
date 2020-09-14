@@ -14,6 +14,8 @@ Gatsby has two modes for compiling a site: 1. Develop - run with the `gatsby dev
 
 You can start Gatsby in either mode with its respective command: gatsby develop or gatsby build.
 
+![Visual of how Gatsby works](../.gitbook/assets/gatsbyjs.png)
+
 ## Build time vs runtime
 
 Interaction with the front-end after a build has completed can be referred to as runtime. Gatsby creates a JavaScript runtime that takes over in the browser once the initial HTML has loaded. This makes it possible to run ajax callbacks and inject markup into the DOM.
