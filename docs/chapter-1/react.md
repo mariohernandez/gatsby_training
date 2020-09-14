@@ -1,4 +1,4 @@
-# What is React?
+# React
 
 React is a javascript library used for building user interfaces \(UI\). React is useful and unique from other javascript libraries for a couple main reasons:
 
@@ -8,3 +8,4 @@ React is a javascript library used for building user interfaces \(UI\). React is
 {% hint style="info" %}
 Further reading: [https://reactjs.org/](https://reactjs.org/)
 {% endhint %}
+

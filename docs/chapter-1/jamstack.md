@@ -1,4 +1,4 @@
-# What is JAMstack?
+# JAMStack
 
 JAMstack is a web development ecosystem based on client-side Javascript frameworks, reusable APIs and/or micro-services, and prebuilt markup such as static site generators.
 
@@ -17,3 +17,4 @@ With the rise of git-centric workflows, continuous delivery, and the overall pop
 {% hint style="info" %}
 Further reading: [https://jamstack.org/](https://jamstack.org/)
 {% endhint %}
+

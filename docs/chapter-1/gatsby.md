@@ -1,4 +1,4 @@
-# What is Gatsby?
+# Gatsby
 
 Gatsby is a [React](https://reactjs.org/docs/getting-started.html)-based, [GraphQL](https://graphql.org/learn/) powered, [static site generator](https://www.netlify.com/blog/2017/05/25/top-ten-static-site-generators-of-2017/). What does that mean? Well, it weaves together the best parts of React, [webpack](https://webpack.js.org/concepts/), [react-router](https://reacttraining.com/react-router/core/guides/philosophy), GraphQL, and other front-end tools into one very enjoyable developer experience. Don’t get hung up on the moniker ‘static site generator’. That term has been around for a while, but Gatsby is far more like a modern front-end framework than a static site generator of old.
 
@@ -31,3 +31,4 @@ If you compare the outputs of the two commands \(gatsby develop vs gatsby build\
 {% hint style="info" %}
 Further reading: [https://www.gatsbyjs.org/](https://www.gatsbyjs.org/)
 {% endhint %}
+

@@ -1,4 +1,4 @@
-# What is JSX
+# JSX
 
 JSX is a syntax extension to Javascript and is use in React apps to describe what the UI should look like. JSX may look similar to a template language but it provides the full power of Javascript.
 
@@ -25,3 +25,4 @@ function AboutPage(props) {
 }
 export default AboutPage
 ```
+

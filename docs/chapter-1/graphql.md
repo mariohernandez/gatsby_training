@@ -1,4 +1,4 @@
-# What is GraphQL?
+# GraphQL
 
 [GraphQL](https://graphql.org/learn/) is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL isn't tied to any specific database or storage engine and is instead backed by your existing code and data.
 
@@ -7,3 +7,4 @@ Loading data with GraphQL is fairly similar to directly loading JSON, but it pro
 {% hint style="info" %}
 Further reading: [https://www.graphql.com/](https://www.graphql.com/)
 {% endhint %}
+
