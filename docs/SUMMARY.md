@@ -25,7 +25,6 @@
 ## Chapter 4
 
 * [Data sources](chapter-4/data-sources.md)
-* [GraphQL](chapter-4/graphql.md)
 * [Adding a GraphQL query](chapter-4/adding-a-graphql-query.md)
 * [Using gatsby-node to create nodes](chapter-4/using-gatsby-node-to-create-nodes.md)
 
