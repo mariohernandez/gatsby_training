@@ -19,9 +19,9 @@
 
 ## Chapter 3
 
-* [Create Page Function](chapter-3/create-page-function.md)
-* [Create Page Explained](chapter-3/create-page-explained.md)
+* [createPages Function](chapter-3/create-pages-function.md)
 * [Creating a template](chapter-3/creating-a-template.md)
+* [Gatsby Link](chapter-3/gatsby-link.md)
 
 ## Chapter 4
 
