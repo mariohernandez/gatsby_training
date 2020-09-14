@@ -20,7 +20,6 @@
 ## Chapter 3
 
 * [createPages Function](chapter-3/create-pages-function.md)
-* [Creating a template](chapter-3/creating-a-template.md)
 * [Gatsby Link](chapter-3/gatsby-link.md)
 
 ## Chapter 4
@@ -44,3 +43,4 @@
 * [Working with Images](chapter-7/working-with-images.md)
 * [Adding scripts using gatsby-ssr](chapter-7/adding-scripts-using-gatsby-ssr.md)
 * [Getting runtime data from APIs \(useEffect or useQuery\)](chapter-7/getting-runtime-data-from-apis-useeffect-or-usequery.md)
+

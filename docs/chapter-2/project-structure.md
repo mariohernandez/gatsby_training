@@ -1,4 +1,4 @@
-# Components structure
+# Project structure
 
 Now that you know how to start a Gatsby site from scratch, let’s pull down our more fleshed out repo with the project we will be working from for the remainder of this training, to save us some time.
 
@@ -45,3 +45,4 @@ The code in this file is run once in the process of building your site. You can 
 ### gatsby-ssr.js
 
 This file lets you alter the content of static HTML files as they are being Server-Side Rendered \(SSR\) by Gatsby and Node.js. To use the [Gatsby SSR APIs](https://www.gatsbyjs.org/docs/ssr-apis/), create a file called gatsby-ssr.js in the root of your site. Export any of the APIs you wish to use in this file.
+

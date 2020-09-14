@@ -1,4 +1,4 @@
-# Build your first Gatsby Site
+# Build your first Gatsby site
 
 ## Gatsby CLI <a id="docs-internal-guid-337bec8f-7fff-6cb1-6ffc-7492002cd7e0"></a>
 

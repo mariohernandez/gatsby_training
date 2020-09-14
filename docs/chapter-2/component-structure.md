@@ -24,3 +24,4 @@ gatsby
 {% hint style="info" %}
 Read more about Components in React/Gatsby: [https://www.gatsbyjs.org/docs/building-with-components/](https://www.gatsbyjs.org/docs/building-with-components/)
 {% endhint %}
+

@@ -65,3 +65,4 @@ const Link = ({ children, to, activeClassName, partiallyActive, ...other }) => {
 
 export default Link
 ```
+

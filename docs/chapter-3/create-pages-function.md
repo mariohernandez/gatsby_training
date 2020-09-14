@@ -1,4 +1,4 @@
-# createPages function
+# createPages Function
 
 The `createPages` function is probably going to be your first foray out of just the **gatsby-config** file and into the meat of Gatsby’s API. The `gatsby-node.js` file is where most of a developer’s interaction with Gatsby’s API takes place. Let’s look at how we are building a page for each of our movies in Nitflex:
 
@@ -47,3 +47,4 @@ exports.createPages = async ({ graphql, actions }) => {
 ```
 
 This is really cool! We could make 1000s of pages this way. This is the most common way that pages are made in Gatsby. But we aren’t querying enough data to make our page have content. How does the page get all the data it needs? Here, we are just querying enough to get an ‘id’ type field for each movie. We need to look in the `movie.js`.
+
