@@ -14,7 +14,8 @@
 ## Chapter 2
 
 * [Build your first Gatsby site](chapter-2/build-your-first-gatsby-site.md)
-* [Project Structure Overview](chapter-2/project-structure-overview.md)
+* [Project structure](chapter-2/project-structure.md)
+* [Component structure](chapter-2/component-structure.md)
 
 ## Chapter 3
 
