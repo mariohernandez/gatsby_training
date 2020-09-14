@@ -4,9 +4,11 @@
 
 ## Chapter 1
 
-* [What is Gatsby](chapter-1/what-is-gatsby.md)
 * [React](chapter-1/react.md)
+* [What is Gatsby](chapter-1/gatsby.md)
 * [GraphQL](chapter-1/graphql.md)
+* [JAMStack](chapter-1/jamstack.md)
+* [JSX](chapter-1/jsx.md)
 * [Webpack](chapter-1/webpack.md)
 
 ## Chapter 2
@@ -42,4 +44,3 @@
 * [Working with Images](chapter-7/working-with-images.md)
 * [Adding scripts using gatsby-ssr](chapter-7/adding-scripts-using-gatsby-ssr.md)
 * [Getting runtime data from APIs \(useEffect or useQuery\)](chapter-7/getting-runtime-data-from-apis-useeffect-or-usequery.md)
-
