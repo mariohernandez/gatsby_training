@@ -1,8 +1,8 @@
-# Using the graphql playground
+# Using the GraphQL playground
 
 When the Gatsby development server is running, it will include GraphiQL, which is a browser-based tool you can use to query/inspect the GraphQL database associated with your site.
 
-You can access the GraphiQL interface at: [http://localhost:8000/___graphql](http://localhost:8000/___graphql)
+You can access the GraphiQL interface at: [http://localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql)
 
 With GraphiQL you can run queries to see the data from the Drupal site that Gatsby pulled in. When exploring the data in GraphiQL you’ll see that Gatsby groups Drupal content into collections based off of the content type \(“allNodeMovie”, “allNodeLandingPage”, etc.\)
 
@@ -37,3 +37,4 @@ Further reading:
 
 [How To GraphQL](https://www.howtographql.com/)
 {% endhint %}
+

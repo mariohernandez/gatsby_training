@@ -39,3 +39,4 @@ const MovieTemplate = ({ data }) => {
 Using Javascript destructuring we pull the data we named \`movie\` out and render the fields we want.
 
 Wow, that’s a lot to take in, but if you get that pattern down alone, you are well on your way to building large sites with Gatsby. 💥
+
