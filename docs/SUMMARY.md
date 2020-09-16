@@ -26,8 +26,9 @@
 ## Chapter 4
 
 * [Data sources](chapter-4/data-sources.md)
-* [Adding a GraphQL query](chapter-4/adding-a-graphql-query.md)
-* [Using gatsby-node to create nodes](chapter-4/using-gatsby-node-to-create-nodes.md)
+* [Connecting a data source](chapter-4/connecting.md)
+* [Using the GraphQL playground](chapter-4/playground.md)
+* [useEffect and useQuery](chapter-4/apis.md)
 
 ## Chapter 5
 
