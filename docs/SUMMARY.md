@@ -48,7 +48,6 @@
 
 ## Components
 
+* [About Components](components/components.md)
 * [Eyebrow](components/eyebrow.md)
-* [Eyebrow2](components/eyebrow2.md)
 * [Button](components/button.md)
-

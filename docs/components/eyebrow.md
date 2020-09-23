@@ -1,58 +1,28 @@
-# Eyebrow
+# Eyebrow2
 
-### _Everything in Gatsby is built using components._
-
-### Our project's structure
-
-```text
-gatsby
-├── gatsby-config.js
-├── package.json
-└── src
-    ├── components
-    │   ├── ...
-    │   └── ctaButton
-    │   │   └── index.js
-    │   │   └── style.module.scss
-    │   └── eyebrow
-    │       └── index.js
-    │       └── style.module.scss
-    |
-    ├── pages
-    │   ├── index.js
-    │   └── 404.js
-    |
-    ├── templates
-        └── movie.js
-```
-
-### Page components
-
-Components under `src/pages` become pages automatically with paths based on their file name. For example `src/pages/index.js` is mapped to `yoursite.com` and `src/pages/404.js` becomes `yoursite.com/404/`. Every `.js` or `.jsx` file in the pages directory must resolve to either a string or react component, otherwise your build will fail.
-
-**Example:**
+Before we dive into the more advance stuff, let's start by creating a super simple component. The component name is **Eyebrow**, and this is a component you would normally use to label or tag content, or to print a simple line of plain text.
 
 {% tabs %}
-{% tab title="src/pages/about.js" %}
+{% tab title="/components/eyebrow/index.js" %}
 ```javascript
-import React from "react"
+import React from 'react';
 
-function AboutPage(props) {
+const Eyebrow = ({ children }) => {
   return (
-    <div className="container">
-      <p>About me.</p>
+    <div className="eyebrow">
+      {children}
     </div>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default Eyebrow;
 ```
 {% endtab %}
 {% endtabs %}
 
-### Non-page components, or Sub-components
-
-A Non-page component is one that’s embedded inside some other component, forming a component hierarchy. An example would be a Header component that’s included in multiple page components. Gatsby uses GraphQL to enable components to declare the data they need. Using the [StaticQuery](https://www.gatsbyjs.com/docs/static-query/) component or [useStaticQuery hook](https://www.gatsbyjs.com/docs/use-static-query/), you can colocate a non-page component with its data.
-
-Let's do a couple of exercises on non-page components
+* First we import **React** to ensure we have all React-related resources available
+* Next we create a function in which we declared a variable name of **Eyebrow**.  All components are functions.
+* The `({ children })` is a React built-in prop \(short for “properties”\), that can be used as a placeholder for any value you want to pass as the component's content.
+* The `render` method returns a _description_ of what you want to see on the screen.  React/Gatsby takes the description and displays the result. In particular, `render` returns a **Gatsby element**, which is a lightweight description of what to render.
+* Finally, `export default Eyebrow` makes this component available so it can be reused anywhere.
 
