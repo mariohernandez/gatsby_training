@@ -1,4 +1,4 @@
-# Intro to Getting runtime data from APIs \(useEffect or useQuery\)
+# useEffect and useQuery
 
 Often with the term ‘static site generator’ people come in with the notion that it means there is no Javascript on the finished page, and therefore no data can be updated in the client. With Gatsby, however, the finished page is just React components! That means you can do absolutely everything you would normally do with a React application in a Gatsby site. In this case, that means you can fetch and update data via network requests, even to the data sources you used to statically build the site.
 
@@ -34,3 +34,4 @@ function MyComponent() {
 ```
 
 That’s really it. That’s the same example and pattern you would use in a non-Gatsby React app, and it works for Gatsby just as well. These libraries also have great docs and show things like conditional fetching, or dependent calls.
+

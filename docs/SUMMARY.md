@@ -45,3 +45,8 @@
 * [Working with Images](chapter-7/working-with-images.md)
 * [Adding scripts using gatsby-ssr](chapter-7/adding-scripts-using-gatsby-ssr.md)
 * [Getting runtime data from APIs \(useEffect or useQuery\)](chapter-7/getting-runtime-data-from-apis-useeffect-or-usequery.md)
+
+## Components
+
+* [Eyebrow](components/eyebrow.md)
+
