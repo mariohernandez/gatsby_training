@@ -32,6 +32,8 @@
   // Colors
   // Use the variable modifier 'var(--color-name--rgb)' to use
   // color transparency.
+  --color-red: #{$color-red};
+  --color-black: #{$color-black};
   --color-endless-potential: #{$color-endless-potential};
   --color-endless-potential--rgb: #{derive-rgb-values-from-hex($color-endless-potential)};
   --color-nittany-navy: #{$color-nittany-navy};

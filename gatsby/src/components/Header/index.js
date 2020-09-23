@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => {
       allFile(
         filter: {
           sourceInstanceName: { eq: "images" }
-          relativePath: { eq: "logo.svg" }
+          relativePath: { eq: "nitflex-logo.svg" }
         }
       ) {
         nodes {
