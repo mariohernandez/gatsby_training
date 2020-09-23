@@ -1,23 +1,58 @@
 # Eyebrow
 
-Before we dive into the more advance stuff, let's start by creating a super simple component. The component name is **Eyebrow**, and this is a component you would normally use to label or tag content, or to print a simple line of plain text.
+### _Everything in Gatsby is built using components._
+
+### Our project's structure
+
+```text
+gatsby
+├── gatsby-config.js
+├── package.json
+└── src
+    ├── components
+    │   ├── ...
+    │   └── ctaButton
+    │   │   └── index.js
+    │   │   └── style.module.scss
+    │   └── eyebrow
+    │       └── index.js
+    │       └── style.module.scss
+    |
+    ├── pages
+    │   ├── index.js
+    │   └── 404.js
+    |
+    ├── templates
+        └── movie.js
+```
+
+### Page components
+
+Components under `src/pages` become pages automatically with paths based on their file name. For example `src/pages/index.js` is mapped to `yoursite.com` and `src/pages/404.js` becomes `yoursite.com/404/`. Every `.js` or `.jsx` file in the pages directory must resolve to either a string or react component, otherwise your build will fail.
+
+**Example:**
 
 {% tabs %}
-{% tab title="/components/eyebrow/index.js" %}
+{% tab title="src/pages/about.js" %}
 ```javascript
-import React from 'react';
-import styles from './styles.module.scss';
+import React from "react"
 
-const Eyebrow = ({ children }) => {
+function AboutPage(props) {
   return (
-    <div className="eyebrow">
-      {children}
+    <div className="container">
+      <p>About me.</p>
     </div>
-  );
-};
+  )
+}
 
-export default Eyebrow;
+export default AboutPage
 ```
 {% endtab %}
 {% endtabs %}
+
+### Non-page components, or Sub-components
+
+A Non-page component is one that’s embedded inside some other component, forming a component hierarchy. An example would be a Header component that’s included in multiple page components. Gatsby uses GraphQL to enable components to declare the data they need. Using the [StaticQuery](https://www.gatsbyjs.com/docs/static-query/) component or [useStaticQuery hook](https://www.gatsbyjs.com/docs/use-static-query/), you can colocate a non-page component with its data.
+
+Let's do a couple of exercises on non-page components
 
