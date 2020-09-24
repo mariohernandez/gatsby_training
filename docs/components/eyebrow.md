@@ -1,4 +1,4 @@
-# Eyebrow2
+# Eyebrow
 
 Before we dive into the more advance stuff, let's start by creating a super simple component. The component name is **Eyebrow**, and this is a component you would normally use to label or tag content, or to print a simple line of plain text.
 
