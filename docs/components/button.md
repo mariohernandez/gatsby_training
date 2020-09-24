@@ -2,7 +2,11 @@
 
 The next component we will look at is a Button.  This one uses all the same principles as the Eyebrow component but it also expands into a more advanced component by using logic on the data being passed to it to determine which HTML tag to use for a button. Let's take a closer look:
 
+### Exercise:
 
+1. Inside **Components**, create a new folder called **ctaButton**
+2. Inside **ctaButton**, create a new file called `index.js`
+3. In **index.js**, add the following code:
 
 {% tabs %}
 {% tab title="button.js" %}
