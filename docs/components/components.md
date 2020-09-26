@@ -2,6 +2,8 @@
 
 ### _Everything in Gatsby is built using components._
 
+Components are independent and reusable. They can either be Javascript functions or classes. Either way, they both return a piece of code that represents part of a web page.
+
 ### Our project's structure
 
 ```text
