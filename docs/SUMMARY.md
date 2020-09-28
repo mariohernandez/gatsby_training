@@ -52,3 +52,7 @@
 * [Eyebrow](components/eyebrow.md)
 * [Button](components/button.md)
 
+## Resources
+
+* [Gatsby and React Resources](resources/gatsby-and-react-resources.md)
+
