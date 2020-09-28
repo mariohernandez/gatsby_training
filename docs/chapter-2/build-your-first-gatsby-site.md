@@ -4,11 +4,11 @@
 
 To get started on your first Gatsby site you need to be somewhat comfortable using the command line and have Node and Git installed. The Gatsby CLI tool lets you quickly create new Gatsby-powered sites and run commands for developing Gatsby sites. It is a published npm package.
 
-The Gatsby CLI is available via npm and should be installed globally by running npm install -g gatsby-cli.
+The Gatsby CLI is available via npm and should be installed globally by running 
 
-{% hint style="info" %}
-**Note:** when you install Gatsby and run it for the first time, you’ll see a short message notifying you about anonymous usage data that is being collected for Gatsby commands, you can read more about how that data is pulled out and used in the [telemetry doc](https://www.gatsbyjs.org/docs/telemetry).
-{% endhint %}
+```bash
+npm install -g gatsby-cli
+```
 
 To see the commands available to you with the Gatsby CLI, run `gatsby --help`
 
@@ -16,14 +16,27 @@ To see the commands available to you with the Gatsby CLI, run `gatsby --help`
 
 Now you are ready to use the Gatsby CLI tool to create your first Gatsby site. Using the tool, you can download what are called “[starters](https://www.gatsbyjs.org/docs/starters/)” \(out of the box partially built sites with some default configuration\) to help you get moving faster on creating a certain type of site. The [gatsby-starter-default starter](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-default/) you’ll be using here is a starter with the bare essentials needed for a Gatsby site.
 
-Install this starter locally by running the following in your command line:
+Install this starter anywhere in your file system by running the following in your command line:
 
-* `gatsby new gatsby-starter-default https://github.com/gatsbyjs/gatsby-starter-default`
-* `cd gatsby-starter-default`
-* `gatsby develop`
+```bash
+gatsby new my-gatsby-site https://github.com/gatsbyjs/gatsby-starter-default
+```
+
+`Then navigate into the newly created directory`
+
+```bash
+cd my-gatsby-site
+```
+
+`And finally running the develop command to fire up your new gatsby site`
+
+```bash
+gatsby develop
+```
 
 ### View your site locally:
 
 Open up a new tab in your browser and navigate to [http://localhost:8000](http://localhost:8000/).
 
 BAM! You’ve just created your first Gatsby site! 🌮
+
