@@ -40,3 +40,25 @@ Open up a new tab in your browser and navigate to [http://localhost:8000](http:/
 
 BAM! You’ve just created your first Gatsby site! 🌮
 
+### Other things you can do with Gatsby CLI
+
+### Create a Production build
+
+To build a production-ready build you can run
+
+```bash
+gatsby build
+```
+
+* Gatsby will perform an optimized production build for your site, generating static HTML and per-route JavaScript code bundles.
+
+### Serve the production build locally
+
+If you would like to see a replica of the production site running locally, run
+
+```bash
+gatsby serve
+```
+
+Gatsby starts a local HTML server for testing your built site. Remember to build your site using `gatsby build` before using this command.
+
