@@ -18,7 +18,7 @@ Now you are ready to use the Gatsby CLI tool to create your first Gatsby site. U
 
 Install this starter locally by running the following in your command line:
 
-* `gatsby new gatsby-starter-default` [`https://github.com/gatsbyjs/gatsby-starter-default`](https://github.com/gatsbyjs/gatsby-starter-default)\`\`
+* `gatsby new gatsby-starter-default https://github.com/gatsbyjs/gatsby-starter-default`
 * `cd gatsby-starter-default`
 * `gatsby develop`
 
@@ -27,4 +27,3 @@ Install this starter locally by running the following in your command line:
 Open up a new tab in your browser and navigate to [http://localhost:8000](http://localhost:8000/).
 
 BAM! You’ve just created your first Gatsby site! 🌮
-
