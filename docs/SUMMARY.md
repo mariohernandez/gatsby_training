@@ -55,4 +55,5 @@
 ## Resources
 
 * [Gatsby and React Resources](resources/gatsby-and-react-resources.md)
+* [Other resources](resources/other-resources.md)
 
