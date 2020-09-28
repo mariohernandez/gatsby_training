@@ -4,18 +4,17 @@ Before we dive into the more advance stuff, let's start by creating a super simp
 
 ### Exercise:
 
-1. Inside **Components**, create a new folder called **eyebrow**
-2. Inside **eyebrow**, create a new file called `index.js`
-3. In **index.js**, add the following code:
+1. Inside **components**, create a new file called `eyebrow.js`
+2. In `eyebrow.js`, add the following code:
 
 {% tabs %}
-{% tab title="/components/eyebrow/index.js" %}
+{% tab title="/components/eyebrow.js" %}
 ```javascript
 import React from 'react';
 
 const Eyebrow = ({ children }) => {
   return (
-    <div className="eyebrow">
+    <div style={{ color: '#fff' }}>
       {children}
     </div>
   );
@@ -31,4 +30,17 @@ export default Eyebrow;
 * The `({ children })` is a React built-in prop \(short for “properties”\), that can be used as a placeholder for any data you want to pass as the component's content.
 * The `render` method returns a _description_ of what you want to see on the screen.  React/Gatsby takes the description and displays the result. In particular, `render` returns a **Gatsby element**, which is a lightweight description of what to render.
 * Finally, `export default Eyebrow` makes this component available so it can be reused anywhere.
+
+### Let's use the new Eyebrow component
+
+1. In your editor, open `components/header.js`
+2. At the top of the file, import the Eyebrow component: `import Eyebrow from "./eyebrow";`
+3. After the closing of the Link tag \(`</Link>`\), add the Eyebrow component as follows:
+
+```javascript
+<Eyebrow children='Learning Gatsby' />
+```
+
+* After saving your changes if you visit your site's homepage you should see "_Learning Gatsby_" under the the Site's title.
+* In this example we have given the `children` prop a value of "Learning Gatsby".  This is great because this means we can reuse the Eyebrow component anywhere and we can change its value to anything we want on each instance.
 
