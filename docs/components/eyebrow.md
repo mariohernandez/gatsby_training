@@ -26,9 +26,9 @@ export default Eyebrow;
 {% endtabs %}
 
 * First we import **React** to ensure we have all React-related resources available
-* Next we create a function in which we declared a variable name of **Eyebrow**.  Components are independent and reusable. They can either be Javascript functions or classes. Either way, they both return a piece of code that represents part of a web page.
+* Next we create a function in which we declared a variable named **Eyebrow**.  Components are independent and reusable. They can either be Javascript functions or classes. Either way, they both return a piece of code that represents part of a web page.
 * The `({ children })` is a React built-in prop \(short for “properties”\), that can be used as a placeholder for any data you want to pass as the component's content.
-* The `render` method returns a _description_ of what you want to see on the screen.  React/Gatsby takes the description and displays the result. In particular, `render` returns a **Gatsby element**, which is a lightweight description of what to render.
+* The `return` method returns a _description_ of what you want to see on the screen.  React/Gatsby takes the description and displays the result. In particular, `return` returns a **Gatsby element**, which is a lightweight description of what to render.
 * Finally, `export default Eyebrow` makes this component available so it can be reused anywhere.
 
 ### Let's use the new Eyebrow component

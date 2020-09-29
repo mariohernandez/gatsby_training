@@ -1,6 +1,6 @@
 # Button
 
-The next component we will look at is a Button.  This one uses all the same principles as the Eyebrow component but it also expands into a more advanced component by using logic on the data being passed to it to determine which HTML tag to use for a button. Let's take a closer look:
+The next component we will build is a Button.  This one uses all the same principles as the Eyebrow component but it also expands into a more advanced component by using logic on the data being passed to it to determine which HTML tag to use for a button. It also makes use of `prop-types`.  Let's take a closer look:
 
 ### Exercise:
 
@@ -53,8 +53,9 @@ CtaButton.propTypes = {
 #### Imports
 
 * As usual we import React
-* Next we import prop-types which are a built-in feature of react to allow for data types to be defined.  This is recommended since JavaScript is a loosely-typed language, in a Gatsby site we need to be more specific about our data types to avoid errors
-* Styling on this project is done using CSS Modules, to be able to add multiple classes to our components we are importing the classnames prop
+* Next we import `prop-types` which are a built-in feature of react to allow for data types to be defined.  This is recommended since JavaScript is a loosely-typed language, in a Gatsby site we need to be more specific about our data types to avoid errors
+* We import `classnames`, which is a simple JavaScript utility for conditionally joining classNames together.
+* Styling on this project is done using [CSS Modules](../chapter-6/working-with-css.md) 
 * We import the respective style file for this component \(`style.module.scss`\)
 * The last import is the **customPropTypes** which is a custom-written list of various data types.  Having this on its own file makes our code cleaner as otherwise we would need to write logic to specify each data type in our component.
 
