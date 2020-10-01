@@ -15,7 +15,7 @@ Let's say I want to style a Hero component which is located in `components/hero/
 
 #### **Writing Styles in CSS Modules**
 
-Writing CSS in CSS Modules is not much different than traditional CSS.  The main difference is how selectors classes are written.  In CSS Modules we use camelCase for selector classes.  For example:  `.mainNavigation`, `.siteLogo`, `.featuredNews`, etc.  The CSS rules are written the same way you would write them in traditional css or SCSS.  See example below:
+Writing CSS in CSS Modules is not much different than traditional CSS.  The main difference is how selectors classes are written.  In CSS Modules we use **camelCase** for selector classes.  For example:  `.mainNavigation`, `.siteLogo`, `.featuredNews`, etc.  The CSS rules are written the same way you would write them in traditional css or SCSS.  See example below:
 
 {% tabs %}
 {% tab title="components/hero/styles.module.scss" %}
