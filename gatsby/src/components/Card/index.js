@@ -9,7 +9,7 @@ import Heading from '../Heading';
 
 import styles from './styles.module.scss';
 
-const GridItem = ({
+const Card = ({
   title,
   path,
   image,
@@ -19,7 +19,7 @@ const GridItem = ({
   children
 }) => {
   return (
-    <Link className={styles.gridItem} to={path} tabIndex={1}>
+    <Link className={styles.Card} to={path} tabIndex={1}>
       <Image fluid={image} />
       <div className={styles.details}>
         <div className={styles.detailsInner}>
@@ -39,9 +39,9 @@ const GridItem = ({
   );
 };
 
-export default GridItem;
+export default Card;
 
-GridItem.propTypes = {
+Card.propTypes = {
   title: PropTypes.string,
   path: PropTypes.string,
   image: PropTypes.string
