@@ -4,13 +4,14 @@ A training workshop by [Mediacurrent](https://mediacurrent.com).
 
 ## Getting Started
 
-This repo will allow you to get the codebase to build a new Gatsby website which has been configured to pull its content from Drupal.  Both Gatsby and Drupal run locally.
+This repo will allow you to get the codebase to build a new Gatsby website which has been configured to pull its content from Drupal. Both Gatsby and Drupal run locally.
 
 ### Requirements
 
 #### Operating System:
+
 * macOS 10.13 or later
-* Windows 10 Pro+ or equivalent (eg Windows 10 Enterprise) with Hyper-V running
+* Windows 10 Pro+ or equivalent \(eg Windows 10 Enterprise\) with Hyper-V running
 * Linux with kernel version 4.x or higher
 
 #### Software:
@@ -44,26 +45,30 @@ cd gatsby_training
 lando start
 ```
 
-_This will build your Docker containers needed to run Gatsby and Drupal.  **NOTE**: Docker needs to be running before running lando start._
+_This will build your Docker containers needed to run Gatsby and Drupal. **NOTE**: Docker needs to be running before running lando start._
 
 ```text
 cd gatsby
 ```
+
 _Change into the `gatsby` folder_
 
 ```text
 nvm use
 ```
+
 _If you get errors, you can try running:_ `nvm install` then `nvm use`. _This will use the version of node specifid inside `.nvmrc`_
 
 ```text
 npm install
 ```
- _This will install all of Gatsby/node dependencies_.
 
- ```text
+_This will install all of Gatsby/node dependencies_.
+
+```text
 gatsby develop
 ```
+
 _This will start Gatsby which should immediately connect to Drupal to pull all content_.
 
 ## 3. Access your Gatsby and Drupal sites
@@ -76,8 +81,9 @@ _This will start Gatsby which should immediately connect to Drupal to pull all c
 
 [https://nitflex.lndo.site](https://nitflex.lndo.site)
 
-## Login to Drupal: (switch to http if https is not working)
+## Login to Drupal: \(switch to http if https is not working\)
 
 [https://nitflex.lndo.site/user/login](https://nitflex.lndo.site/user/login)
 
 Your credentials are: username: `admin`, password: `admin`
+

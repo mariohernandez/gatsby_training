@@ -55,7 +55,7 @@ CtaButton.propTypes = {
 * As usual we import React
 * Next we import `prop-types` which are a built-in feature of react to allow for data types to be defined.  This is recommended since JavaScript is a loosely-typed language, in a Gatsby site we need to be more specific about our data types to avoid errors
 * We import `classnames`, which is a simple JavaScript utility for conditionally joining classNames together.
-* Styling on this project is done using [CSS Modules](../chapter-6/working-with-css.md) 
+* Styling on this project is done using [CSS Modules](working-with-css.md) 
 * We import the respective style file for this component \(`style.module.scss`\)
 * The last import is the **customPropTypes** which is a custom-written list of various data types.  Having this on its own file makes our code cleaner as otherwise we would need to write logic to specify each data type in our component.
 
