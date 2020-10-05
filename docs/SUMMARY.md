@@ -2,7 +2,7 @@
 
 * [About this training](README.md)
 
-## Chapter 1
+## Fundamentals
 
 * [React](chapter-1/react.md)
 * [Gatsby](chapter-1/gatsby.md)
@@ -11,49 +11,44 @@
 * [JSX](chapter-1/jsx.md)
 * [Webpack](chapter-1/webpack.md)
 
-## Chapter 2
+## Getting Started
 
 * [Build your first Gatsby site](chapter-2/build-your-first-gatsby-site.md)
 * [Project structure](chapter-2/project-structure.md)
 * [Component structure](chapter-2/component-structure.md)
-
-## Chapter 3
-
-* [createPages Function](chapter-3/create-pages-function.md)
-* [Create a template](chapter-3/create-a-template.md)
-* [Gatsby Link](chapter-3/gatsby-link.md)
-
-## Chapter 4
-
-* [Data sources](chapter-4/data-sources.md)
-* [Connecting a data source](chapter-4/connecting.md)
-* [Using the GraphQL playground](chapter-4/playground.md)
-* [useEffect and useQuery](chapter-4/apis.md)
-
-## Chapter 5
-
-* [Gatsby plugins](chapter-5/gatsby-plugins.md)
-* [Installing  a source plugin](chapter-5/installing-a-source-plugin.md)
-
-## Chapter 6
-
-* [Components](chapter-6/components.md)
-* [Working with CSS](chapter-6/working-with-css.md)
-
-## CHAPTER 7
-
-* [Working with Images](chapter-7/working-with-images.md)
-* [Adding scripts using gatsby-ssr](chapter-7/adding-scripts-using-gatsby-ssr.md)
-* [Getting runtime data from APIs \(useEffect or useQuery\)](chapter-7/getting-runtime-data-from-apis-useeffect-or-usequery.md)
 
 ## Components
 
 * [About Components](components/components.md)
 * [Eyebrow](components/eyebrow.md)
 * [Button](components/button.md)
+* [Working with CSS](components/working-with-css.md)
+
+## CreatePages
+
+* [createPages Function](chapter-3/create-pages-function.md)
+* [Create a template](chapter-3/create-a-template.md)
+* [Gatsby Link](chapter-3/gatsby-link.md)
+
+## Data and GraphQL
+
+* [Data sources](chapter-4/data-sources.md)
+* [Connecting a data source](chapter-4/connecting.md)
+* [Using the GraphQL playground](chapter-4/playground.md)
+* [useEffect and useQuery](chapter-4/apis.md)
+
+## Gatsby Plugins
+
+* [Gatsby plugins](chapter-5/gatsby-plugins.md)
+* [Installing  a source plugin](chapter-5/installing-a-source-plugin.md)
+
+## Bonus
+
+* [Working with Images](chapter-7/working-with-images.md)
+* [Adding scripts using gatsby-ssr](chapter-7/adding-scripts-using-gatsby-ssr.md)
+* [Getting runtime data from APIs \(useEffect or useQuery\)](chapter-7/getting-runtime-data-from-apis-useeffect-or-usequery.md)
 
 ## Resources
 
 * [Gatsby and React Resources](resources/gatsby-and-react-resources.md)
 * [Other resources](resources/other-resources.md)
-
