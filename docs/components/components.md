@@ -13,7 +13,7 @@ gatsby
 └── src
     ├── components
     │   ├── ...
-    │   └── ctaButton
+    │   └── Button
     │   │   └── index.js
     │   │   └── style.module.scss
     │   └── eyebrow

@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 
 import Heading from '../Heading';
 import Stars from '../Stars';
-import CtaButton from '../CtaButton';
+import Button from '../Button';
 import Rating from '../Rating';
 
 import styles from './styles.module.scss';
@@ -28,7 +28,7 @@ const Hero = ({ title, subtitle, image, rating, stars, path }) => {
             <Rating rating={rating} classes={styles.rating} />
             <Stars stars={stars} />
           </div>
-          <CtaButton buttonType="primary">Watch Now</CtaButton>
+          <Button buttonType="primary">Watch Now</Button>
         </div>
         <Image fluid={image}></Image>
       </div>
