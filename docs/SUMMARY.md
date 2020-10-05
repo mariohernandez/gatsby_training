@@ -24,18 +24,18 @@
 * [Button](components/button.md)
 * [Working with CSS](components/working-with-css.md)
 
-## CreatePages
-
-* [createPages Function](chapter-3/create-pages-function.md)
-* [Create a template](chapter-3/create-a-template.md)
-* [Gatsby Link](chapter-3/gatsby-link.md)
-
 ## Data and GraphQL
 
 * [Data sources](chapter-4/data-sources.md)
 * [Connecting a data source](chapter-4/connecting.md)
 * [Using the GraphQL playground](chapter-4/playground.md)
 * [useEffect and useQuery](chapter-4/apis.md)
+
+## CreatePages
+
+* [createPages Function](chapter-3/create-pages-function.md)
+* [Create a template](chapter-3/create-a-template.md)
+* [Gatsby Link](chapter-3/gatsby-link.md)
 
 ## Gatsby Plugins
 
