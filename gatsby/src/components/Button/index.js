@@ -5,8 +5,8 @@ import styles from './style.module.scss';
 
 import { childrenType } from '../../global/js/customPropTypes';
 
-const CtaButton = ({ classes, url, children, buttonType, ...rest }) => {
-  const buttonClass = classnames(styles.ctaButton, {
+const Button = ({ classes, url, children, buttonType, ...rest }) => {
+  const buttonClass = classnames(styles.Button, {
     [styles.primary]: buttonType === 'primary',
   })
   return (
@@ -25,9 +25,9 @@ const CtaButton = ({ classes, url, children, buttonType, ...rest }) => {
   );
 };
 
-export default CtaButton;
+export default Button;
 
-CtaButton.propTypes = {
+Button.propTypes = {
   classes: PropTypes.string,
   buttonClass: PropTypes.oneOf(['primary']),
   children: childrenType

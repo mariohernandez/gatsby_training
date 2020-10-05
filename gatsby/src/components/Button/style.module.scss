@@ -1,6 +1,6 @@
 @import '../../global/styles/init';
 
-.ctaButton {
+.Button {
   @include gradient-button;
   -webkit-appearance: none;
   -moz-appearance: none;
