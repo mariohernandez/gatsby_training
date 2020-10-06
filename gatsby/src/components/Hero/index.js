@@ -10,6 +10,8 @@ import Rating from '../Rating';
 
 import styles from './styles.module.scss';
 
+import {fluidImage} from '../../global/js/customPropTypes';
+
 const Hero = ({ title, subtitle, image, rating, stars, path }) => {
   return (
     <div className={styles.hero}>
@@ -43,6 +45,6 @@ Hero.propTypes = {
   subtitle: PropTypes.string,
   rating: PropTypes.string,
   stars: PropTypes.number,
-  image: PropTypes.string,
+  image: fluidImage,
   path: PropTypes.string
 };

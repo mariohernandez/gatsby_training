@@ -19,7 +19,8 @@ const GenreSection = ({ title, items }) => {
             title={node.title}
             image={node.relationships.mainImage.localFile.childImageSharp.fluid}
             rating={node.rating}
-            description={node.body.value}
+            description={node.subtitle}
+            subtitle={node.subtitle}
             stars={node.stars}
           ></Card>
         ))}
