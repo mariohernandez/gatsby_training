@@ -23,6 +23,7 @@
 * [Eyebrow](components/eyebrow.md)
 * [Button](components/button.md)
 * [Working with CSS](components/working-with-css.md)
+* [Movie Card](components/movie-card.md)
 
 ## Data and GraphQL
 
