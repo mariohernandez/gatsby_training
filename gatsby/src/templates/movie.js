@@ -11,7 +11,7 @@ const MovieTemplate = ({ data }) => {
     <Layout>
       <Hero
         title={movie.title}
-        subtitle={movie.field_promo_sentence}
+        subtitle={movie.subtitle}
         rating={movie.rating}
         stars={movie.stars}
         image={movie.relationships.mainImage.localFile.childImageSharp.fluid}

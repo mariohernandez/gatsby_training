@@ -1,5 +1,10 @@
 import PropTypes from 'prop-types';
 /* eslint-disable camelcase */
+
+export const fluidImage = PropTypes.shape({
+        src: PropTypes.string.isRequired
+      }).isRequired
+
 export const fixedGatsbyImageType = PropTypes.shape({
   localFile: PropTypes.shape({
     childImageSharp: PropTypes.shape({
@@ -13,9 +18,7 @@ export const fixedGatsbyImageType = PropTypes.shape({
 export const fluidGatsbyImageType = PropTypes.shape({
   localFile: PropTypes.shape({
     childImageSharp: PropTypes.shape({
-      fluid: PropTypes.shape({
-        src: PropTypes.string.isRequired
-      }).isRequired
+      fluid: fluidImage
     }).isRequired
   }).isRequired
 });

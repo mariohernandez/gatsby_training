@@ -1,25 +1,30 @@
+// Import native React elements
 import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import Image from 'gatsby-image';
 
+// Import custom components
 import Rating from '../Rating';
 import Stars from '../Stars';
 import Heading from '../Heading';
 
+// Import custom styles
 import styles from './styles.module.scss';
 
-const GridItem = ({
+// Import custom PropTypes
+import {fluidImage} from '../../global/js/customPropTypes';
+
+const Card = ({
   title,
   path,
   image,
-  description,
+  subtitle,
   rating,
-  stars,
-  children
+  stars
 }) => {
   return (
-    <Link className={styles.gridItem} to={path} tabIndex={1}>
+    <Link className={styles.Card} to={path} tabIndex={1}>
       <Image fluid={image} />
       <div className={styles.details}>
         <div className={styles.detailsInner}>
@@ -31,7 +36,7 @@ const GridItem = ({
             <Stars stars={stars} />
           </div>
           <div className={styles.description}>
-            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+            {subtitle}
           </div>
         </div>
       </div>
@@ -39,10 +44,12 @@ const GridItem = ({
   );
 };
 
-export default GridItem;
+export default Card;
 
-GridItem.propTypes = {
+// Defining proptypes (data types)
+Card.propTypes = {
   title: PropTypes.string,
+  subtitle: PropTypes.string,
   path: PropTypes.string,
-  image: PropTypes.string
+  image: fluidImage
 };

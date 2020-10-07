@@ -2,12 +2,12 @@ import React from 'react';
 
 import styles from './styles.module.scss';
 
-const Grid = ({ children }) => {
+const CardCollection = ({ children }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.grid}>{children}</div>
+      <div className={styles.cardcollection}>{children}</div>
     </div>
   );
 };
 
-export default Grid;
+export default CardCollection;

@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <Hero
         title={featuredNode.title}
-        subtitle={featuredNode.field_promo_sentence}
+        subtitle={featuredNode.subtitle}
         rating={featuredNode.rating}
         stars={featuredNode.stars}
         path={featuredNode.path.alias}
