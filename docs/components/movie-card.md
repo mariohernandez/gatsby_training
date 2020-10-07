@@ -1,0 +1,98 @@
+# Movie Card
+
+So by now you should have a pretty good idea on how to build simple components and make them available so they can be reused throughout a website.  Now let's build a more complex component in which we will reuse previously built components.  The Card component is widely used to display individual movies as well as the large Featured Movie at the top of the homepage and in individual pages.
+
+In this component we will reused the Eyebrow, Button and other small components to build a larger component.  This is the Atomic Design approach where you first build Atoms and then build Molecules, Organisms, etc.  The Card component is a Molecule because it combines multiple Atoms.
+
+### Building the Movie Card Component
+
+The Movie card component has a lot of moving pieces and to understand it better we are going to build it incrementally.
+
+1. Inside the **Components** folder create a new folder call **Card**
+2. Inside the Card folder create a new `index.js` file
+3. Inside **index.js** add the following code:
+
+```javascript
+// Import native React elements
+import React from 'react';
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import Image from 'gatsby-image';
+
+// Import custom components
+import Rating from '../Rating';
+import Stars from '../Stars';
+import Heading from '../Heading';
+
+// Import custom styles
+import styles from './styles.module.scss';
+
+// Import custom PropTypes
+import {fluidImage} from '../../global/js/customPropTypes';
+```
+
+* We're starting by importing all the assets we will need for this component.  First we import all React and Gatsby-native stuff like `{ Link }`, `PropTypes`, `Image`, and of course, `React` itself.
+* Then we import previously built components: **Rating, Stars,** and **Heading**
+* To style the Card we imported `styles.modules.scss` which you will create shortly
+* And finally, we import `customPropTypes` which is a list of PropTypes we have written to make them reusable in any component
+
+```javascript
+// Import native React elements
+import React from 'react';
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import Image from 'gatsby-image';
+
+// Import custom components
+import Rating from '../Rating';
+import Stars from '../Stars';
+import Heading from '../Heading';
+
+// Import custom styles
+import styles from './styles.module.scss';
+
+// Import custom PropTypes
+import {fluidImage} from '../../global/js/customPropTypes';
+
+const Card = ({
+  title,
+  path,
+  image,
+  subtitle,
+  rating,
+  stars
+}) => {
+  return (
+    <Link className={styles.Card} to={path} tabIndex={1}>
+      <Image fluid={image} />
+      <div className={styles.details}>
+        <div className={styles.detailsInner}>
+          <Heading classes={styles.title} level={3} styleLevel={4}>
+            {title}
+          </Heading>
+          <div className={styles.ratingStarsContainer}>
+            <Rating rating={rating} classes={styles.rating} />
+            <Stars stars={stars} />
+          </div>
+          <div className={styles.description}>
+            {subtitle}
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
+};
+
+export default Card;
+
+// Defining proptypes (data types)
+Card.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  path: PropTypes.string,
+  image: fluidImage
+};
+```
+
+
+
