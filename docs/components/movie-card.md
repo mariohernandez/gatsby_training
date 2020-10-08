@@ -8,7 +8,9 @@ In this component we will reused the Eyebrow, Button and other small components 
 
 The Movie card component has a lot of moving pieces and to understand it better we are going to build it incrementally.
 
-1. Inside the **Components** folder create a new folder call **Card**
+#### Importing all resources:
+
+1. Inside the **Components** folder create a new folder called **Card**
 2. Inside the Card folder create a new `index.js` file
 3. Inside **index.js** add the following code:
 
@@ -31,10 +33,58 @@ import styles from './styles.module.scss';
 import {fluidImage} from '../../global/js/customPropTypes';
 ```
 
-* We're starting by importing all the assets we will need for this component.  First we import all React and Gatsby-native stuff like `{ Link }`, `PropTypes`, `Image`, and of course, `React` itself.
+* We're starting by importing all the dependencies we will need for this component.  First we import all React and Gatsby-native resources like`{ Link }`, `PropTypes`, `Image`, and of course, `React` itself.
 * Then we import previously built components: **Rating, Stars,** and **Heading**
-* To style the Card we imported `styles.modules.scss` which you will create shortly
+* To style the Card we import `styles.modules.scss` which you will create shortly
 * And finally, we import `customPropTypes` which is a list of PropTypes we have written to make them reusable in any component
+
+#### Building the Component as a Function:
+
+1. Just below the last import, let's create a new JavaScript function which will use the name of our Component
+2. Let's add a few props we expect the Card to use
+3. And make it reusable by adding `export default Card;`
+
+```javascript
+const Card = ({ title, path, image, subtitle, rating, stars}) => {
+  return ();
+};
+
+export default Card;
+```
+
+* The Card function expects several props including title, path, image, subtitle, rating, and stars.  These props are basically the fields that make up the card.
+* The `return` statement will provide us with the markup and structure we expect when rendering a card on the browser.  Let's handle that markup now.
+
+#### Writing the expected markup:
+
+1. Modifier the Card function as shown below
+
+```javascript
+const Card = ({ title, path, image, subtitle, rating, stars}) => {
+  return (
+    <Link className={styles.Card} to={path} tabIndex={1}>
+      <Image fluid={image} />
+      <div className={styles.details}>
+        <div className={styles.detailsInner}>
+          <Heading classes={styles.title} level={3} styleLevel={4}>
+            {title}
+          </Heading>
+          <div className={styles.ratingStarsContainer}>
+            <Rating rating={rating} classes={styles.rating} />
+            <Stars stars={stars} />
+          </div>
+          <div className={styles.description}>
+            {subtitle}
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
+};
+```
+
+* First we are using a `<Link ...>` element to wrap the card and make the entire card clickable.  The link's `to={ }` attribute uses `{path}` as its value which is the path to the full/detail page, or node.  If you are wondering where does `<Link>` come from, we declared it above as part of the imports at the top of the page and assigned the name of **Link**.  We can call it anything we want.  Link is a built-in Gatsby component.
+* We are doing something similar to Link with `<Image />`.  This too is a built-in Gatsby component. Gatsby is great at [optimizing images](https://www.sitepoint.com/automatically-optimize-responsive-images-in-gatsby/) and one way to do that is by using `fluid` or `fixed` as shown above.
 
 ```javascript
 // Import native React elements
