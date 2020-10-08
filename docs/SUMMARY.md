@@ -30,7 +30,7 @@
 * [Data sources](data-and-graphql/data-sources.md)
 * [Connecting a data source](data-and-graphql/connecting.md)
 * [Using the GraphQL playground](data-and-graphql/playground.md)
-* [useEffect and useQuery](data-and-graphql/apis.md)
+<!-- * [useEffect and useQuery](data-and-graphql/apis.md) -->
 
 ## CreatePages
 
@@ -53,4 +53,3 @@
 
 * [Gatsby and React Resources](resources/gatsby-and-react-resources.md)
 * [Other resources](resources/other-resources.md)
-
