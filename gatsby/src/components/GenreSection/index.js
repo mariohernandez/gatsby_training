@@ -14,7 +14,7 @@ const GenreSection = ({ title, items }) => {
       <CardCollection>
         {items.map(({ node }) => (
           <Card
-            key={node.nid}
+            key={node.id}
             path={node.path.alias}
             title={node.title}
             image={node.relationships.mainImage.localFile.childImageSharp.fluid}

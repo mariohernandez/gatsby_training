@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styles from './style.module.scss';
 
+// Import custom PropTypes
+import {childrenType} from '../../global/js/customPropTypes';
+
 const Button = ({ classes, url, children, buttonType, ...rest }) => {
   const buttonClass = classnames(styles.Button, {
     [styles.primary]: buttonType === 'primary',
@@ -25,5 +28,5 @@ export default Button;
 Button.propTypes = {
   classes: PropTypes.string,
   buttonClass: PropTypes.oneOf(['primary']),
-  children: ''
+  children: childrenType
 };

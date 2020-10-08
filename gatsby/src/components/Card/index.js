@@ -1,4 +1,4 @@
-// Import native React elements
+// Import native React & Gatsby resources
 import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
@@ -15,14 +15,7 @@ import styles from './styles.module.scss';
 // Import custom PropTypes
 import {fluidImage} from '../../global/js/customPropTypes';
 
-const Card = ({
-  title,
-  path,
-  image,
-  subtitle,
-  rating,
-  stars
-}) => {
+const Card = ({ title, path, image, subtitle, rating, stars}) => {
   return (
     <Link className={styles.Card} to={path} tabIndex={1}>
       <Image fluid={image} />

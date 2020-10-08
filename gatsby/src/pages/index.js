@@ -16,24 +16,24 @@ const IndexPage = ({ data }) => {
   );
 
   // Get first movie from first genre to be featured for hero.
-  const featuredNode = Object.values(groups)[0][0].node;
+  const featuredMovie = Object.values(groups)[0][0].node;
 
   return (
     <Layout>
       <SEO title="Home" />
       <Hero
-        title={featuredNode.title}
-        subtitle={featuredNode.subtitle}
-        rating={featuredNode.rating}
-        stars={featuredNode.stars}
-        path={featuredNode.path.alias}
+        title={featuredMovie.title}
+        subtitle={featuredMovie.subtitle}
+        rating={featuredMovie.rating}
+        stars={featuredMovie.stars}
+        path={featuredMovie.path.alias}
         image={
-          featuredNode.relationships.mainImage.localFile.childImageSharp.fluid
+          featuredMovie.relationships.mainImage.localFile.childImageSharp.fluid
         }
       />
       {/* Map over groups and pass each group in to the section. */}
       {Object.keys(groups).map((group) => (
-        <GenreSection title={group} items={groups[group]} />
+        <GenreSection key={group} title={group} items={groups[group]} />
       ))}
     </Layout>
   );
