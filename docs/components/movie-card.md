@@ -38,7 +38,7 @@ import {fluidImage} from '../../global/js/customPropTypes';
 * To style the Card we import `styles.modules.scss` which you will create shortly
 * And finally, we import `customPropTypes` which is a list of PropTypes we have written to make them reusable in any component
 
-#### Building the Component as a Function:
+#### Building the Card Component:
 
 1. Just below the last import, let's create a new JavaScript function which will use the name of our Component
 2. Let's add a few props we expect the Card to use
@@ -57,7 +57,7 @@ export default Card;
 
 #### Writing the expected markup:
 
-1. Modifier the Card function as shown below
+1. Modify the Card function as shown below
 
 ```javascript
 const Card = ({ title, path, image, subtitle, rating, stars}) => {
@@ -83,8 +83,28 @@ const Card = ({ title, path, image, subtitle, rating, stars}) => {
 };
 ```
 
-* First we are using a `<Link ...>` element to wrap the card and make the entire card clickable.  The link's `to={ }` attribute uses `{path}` as its value which is the path to the full/detail page, or node.  If you are wondering where does `<Link>` come from, we declared it above as part of the imports at the top of the page and assigned the name of **Link**.  We can call it anything we want.  Link is a built-in Gatsby component.
+* First we are using a `<Link ...>` component to wrap the card and make the entire card clickable.  The link's `to={ }` attribute uses `{path}` as its value which is the path to the full/detail page, or node.  If you are wondering where does `<Link>` come from, **Link** is a built-in Gatsby component.  We imported at the beginning to be able to use it in our component.
 * We are doing something similar to Link with `<Image />`.  This too is a built-in Gatsby component. Gatsby is great at [optimizing images](https://www.sitepoint.com/automatically-optimize-responsive-images-in-gatsby/) and one way to do that is by using `fluid` or `fixed` as shown above.
+* The rest of the code above is pretty self-explanatory.  We are wrapping the remaining fields in specific markup with unique CSS classes.
+
+#### Define the Card's PropTypes:
+
+1. After `export default Card;`, add the following block of code to define the PropTypes for the card:
+
+```javascript
+Card.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  path: PropTypes.string,
+  image: fluidImage
+};
+```
+
+* As we indicated before, JavaScript is a loosely-typed language but Gatsby/React requires for Props to have a defined type.  Most props above are using built-in propTypes found in `prop-types`, which was imported as `PropTypes`.  However, for the Image  field, we wrote a custom propType which we are importing as `{ fluidImage }`
+
+#### That's it!  The Card Component is done.
+
+_See the full component code below_
 
 ```javascript
 // Import native React elements
@@ -104,14 +124,7 @@ import styles from './styles.module.scss';
 // Import custom PropTypes
 import {fluidImage} from '../../global/js/customPropTypes';
 
-const Card = ({
-  title,
-  path,
-  image,
-  subtitle,
-  rating,
-  stars
-}) => {
+const Card = ({ title, path, image, subtitle, rating, stars}) => {
   return (
     <Link className={styles.Card} to={path} tabIndex={1}>
       <Image fluid={image} />
@@ -144,5 +157,5 @@ Card.propTypes = {
 };
 ```
 
-
+Next, we are going to make use of the Card component to build the movie listings.
 
