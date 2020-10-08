@@ -15,7 +15,7 @@ Then add the plugin configuration to the `gatsby-config.js` file, and the data s
 ## The Drupal Source Plugin
 
 {% hint style="info" %}
-**About JSON API:**  Before Gatsby can pull data from Drupal, the [JSON API Module](https://www.drupal.org/project/jsonapi) needs to be installed and configure
+**About JSON API:**  Before Gatsby can pull data from Drupal, the [JSON API Module](https://www.drupal.org/project/jsonapi) needs to be enabled and configured
 {% endhint %}
 
 Just like the File System Source plugin, the [Drupal Source Plugin](https://www.gatsbyjs.com/plugins/gatsby-source-drupal/) has already been added \(see line 19\), but if you were to set this up on your own you’d follow the same process:
@@ -24,7 +24,7 @@ Just like the File System Source plugin, the [Drupal Source Plugin](https://www.
 npm install --save gatsby-source-drupal
 ```
 
-Then add the plugin configuration to the gatsby-config.js file, and data from your Drupal site will then be available in Gatsby.
+Then add the plugin configuration to the **gatsby-config.js** file, and data from your Drupal site will then be available in Gatsby.
 
 Be sure to review the different options available for the source plugins on the GatsbyJS site. For example, with the Drupal source plugin you can provide basic authentication credentials if you wanted to keep your Drupal site behind a basic authentication, but still make it available to Gatsby.
 
