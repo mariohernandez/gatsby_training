@@ -16,10 +16,10 @@ const Hero = ({ title, subtitle, image, rating, stars, path }) => {
     <div className={styles.hero}>
       <div className={styles.inner}>
         <div className={styles.content}>
-          <Heading classes={styles.title} level={1}>
+          <Heading classes={styles.title} headingLevel={1}>
             {title}
           </Heading>
-          <Heading classes={styles.subtitle} level={2} styleLevel={4}>
+          <Heading classes={styles.subtitle} headingLevel={2}>
             {subtitle}
           </Heading>
           <div className={styles.starAndRatingContainer}>

@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 
 const CardCollection = ({ children }) => {
   return (
-    <section className={styles.CardCollection}>
+    <section className={styles.cardCollection}>
       {children}
     </section>
   );

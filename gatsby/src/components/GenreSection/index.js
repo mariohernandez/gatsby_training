@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Eyebrow from '../Eyebrow';
-// import CardCollection from '../CardCollection';
+import CardCollection from '../CardCollection';
 import Card from '../Card';
 
 import styles from './styles.module.scss';
 
 const GenreSection = ({ title, items }) => {
   return (
-    <div className={styles.section}>
+    <section className={styles.section}>
       <Eyebrow>{title}</Eyebrow>
-      <Section>
+      <CardCollection>
         {items.map(({ node }) => (
           <Card
             key={node.id}
@@ -25,8 +25,8 @@ const GenreSection = ({ title, items }) => {
           >
           </Card>
         ))}
-      </Section>
-    </div>
+      </CardCollection>
+    </section>
   );
 };
 
