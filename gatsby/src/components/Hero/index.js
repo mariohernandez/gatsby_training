@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Image from 'gatsby-image';
-import { Link } from 'gatsby';
 
 import Heading from '../Heading';
 import Stars from '../Stars';
@@ -17,12 +16,9 @@ const Hero = ({ title, subtitle, image, rating, stars, path }) => {
     <div className={styles.hero}>
       <div className={styles.inner}>
         <div className={styles.content}>
-          <Link to={path} className={styles.link}>
-            <Heading classes={styles.title} level={1}>
-              {title}
-            </Heading>
-          </Link>
-
+          <Heading classes={styles.title} level={1}>
+            {title}
+          </Heading>
           <Heading classes={styles.subtitle} level={2} styleLevel={4}>
             {subtitle}
           </Heading>
