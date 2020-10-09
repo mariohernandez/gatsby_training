@@ -83,7 +83,7 @@ const Card = ({ title, path, image, subtitle, rating, stars}) => {
 };
 ```
 
-* First we are using a `<Link ...>` component to wrap the card and make the entire card clickable.  The link's `to={ }` attribute uses `{path}` as its value which is the path to the full/detail page, or node.  If you are wondering where does `<Link>` come from, **Link** is a built-in Gatsby component.  We imported at the beginning to be able to use it in our component.
+* First we are using a [`<Link ...>`](../createpages/gatsby-link.md) component to wrap the card and make the entire card clickable.  The link's `to={ }` attribute uses `{path}` as its value which is the path to the full/detail page, or node.  If you are wondering where does `<Link>` come from, **Link** is a built-in Gatsby component.  We imported at the beginning to be able to use it in our component.
 * We are doing something similar to Link with `<Image />`.  This too is a built-in Gatsby component. Gatsby is great at [optimizing images](https://www.sitepoint.com/automatically-optimize-responsive-images-in-gatsby/) and one way to do that is by using `fluid` or `fixed` as shown above.
 * The rest of the code above is pretty self-explanatory.  We are wrapping the remaining fields in specific markup with unique CSS classes.
 
