@@ -1,6 +1,5 @@
 // Import native React & Gatsby resources
 import React from 'react';
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import Image from 'gatsby-image';
 
@@ -17,23 +16,25 @@ import {fluidImage} from '../../global/js/customPropTypes';
 
 const Card = ({ title, path, image, subtitle, rating, stars}) => {
   return (
-    <Link className={styles.Card} to={path} tabIndex={1}>
-      <Image fluid={image} />
-      <div className={styles.details}>
-        <div className={styles.detailsInner}>
-          <Heading classes={styles.title} level={3} styleLevel={4}>
+    <article className={styles.Card}>
+      <div className={styles.cardMedia}>
+        <Image fluid={image} />
+      </div>
+      <div className={styles.cardContent}>
+        <div className={styles.cardRating}>
+          <Rating rating={rating} classes={styles.rating} />
+          <Stars stars={stars} />
+        </div>
+        <div className={styles.cardText}>
+          <Heading classes={styles.movieTitle} headingLevel={3} url={path}>
             {title}
           </Heading>
-          <div className={styles.ratingStarsContainer}>
-            <Rating rating={rating} classes={styles.rating} />
-            <Stars stars={stars} />
-          </div>
-          <div className={styles.description}>
+          <div>
             {subtitle}
           </div>
         </div>
       </div>
-    </Link>
+    </article>
   );
 };
 

@@ -1,13 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styles from './styles.module.scss';
 
 const CardCollection = ({ children }) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.cardcollection}>{children}</div>
-    </div>
+    <section className={styles.cardCollection}>
+      {children}
+    </section>
   );
 };
 
 export default CardCollection;
+
+CardCollection.propTypes = {
+  children: PropTypes.array
+};

@@ -1,34 +1,6 @@
 // Default styling for component title.
 @import '../../global/styles/init';
 
-.heading {
-  color: var(--color-white-out);
+.Heading {
+  color: var(--color-black);
 }
-
-.level1 {
-  @include title-mega;
-}
-
-.level2 {
-  @include title-large;
-}
-
-.level3 {
-  @include title-medium;
-}
-
-.level4 {
-  @include title-small;
-}
-
-.level5 {
-  @include title-xsmall;
-}
-
-.level6 {
-  @include title-xxsmall;
-}
-
-.uppercase {
-  text-transform: uppercase;
-};

@@ -1,52 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
+import Link from '../Link';
 
 import { childrenType } from '../../global/js/customPropTypes';
 import styles from './styles.module.scss';
 
 const Heading = ({
-  classes,
-  text,
-  level,
-  styleLevel = level,
-  primary,
-  secondary,
-  uppercase,
+  headingLevel,
+  url,
   children
 }) => {
-  const Element = `h${level}`;
+  const Element = `h${headingLevel}`;
   return (
-    <Element
-      className={classnames(styles.heading, styles[`level${styleLevel}`], {
-        [styles.primary]: primary,
-        [styles.secondary]: secondary,
-        [styles.uppercase]: uppercase,
-        [`${classes}`]: classes
-      })}
-    >
-      {text || children}
+    <Element className={styles.Heading}>
+      {{url} ? <Link to={url}>{children}</Link> : {children}}
     </Element>
   );
 };
 
+export default Heading;
+
 Heading.propTypes = {
-  /** Tag level. Defaults to 2 */
-  level: PropTypes.number,
-  styleLevel: PropTypes.number,
-  /** External classes. */
-  classes: PropTypes.string,
-  /** Content of title. */
+  headingLevel: PropTypes.number,
   text: PropTypes.string,
-  primary: PropTypes.bool,
-  secondary: PropTypes.bool,
-  uppercase: PropTypes.bool,
   children: childrenType
 };
 
 Heading.defaultProps = {
-  level: 2,
-  primary: true
+  headingLevel: 4
 };
-
-export default Heading;
