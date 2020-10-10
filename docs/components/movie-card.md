@@ -15,9 +15,8 @@ The Movie card component has a lot of moving pieces and to understand it better 
 3. Inside **index.js** add the following code:
 
 ```javascript
-// Import native React elements
+// Import native React & Gatsby resources
 import React from 'react';
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import Image from 'gatsby-image';
 
@@ -62,25 +61,29 @@ export default Card;
 ```javascript
 const Card = ({ title, path, image, subtitle, rating, stars}) => {
   return (
-    <Link className={styles.Card} to={path} tabIndex={1}>
-      <Image fluid={image} />
-      <div className={styles.details}>
-        <div className={styles.detailsInner}>
-          <Heading classes={styles.title} level={3} styleLevel={4}>
+    <article className={styles.Card}>
+      <div className={styles.cardMedia}>
+        <Image fluid={image} />
+      </div>
+      <div className={styles.cardContent}>
+        <div className={styles.cardRating}>
+          <Rating rating={rating} classes={styles.rating} />
+          <Stars stars={stars} />
+        </div>
+        <div className={styles.cardText}>
+          <Heading classes={styles.movieTitle} headingLevel={3} url={path}>
             {title}
           </Heading>
-          <div className={styles.ratingStarsContainer}>
-            <Rating rating={rating} classes={styles.rating} />
-            <Stars stars={stars} />
-          </div>
-          <div className={styles.description}>
+          <div>
             {subtitle}
           </div>
         </div>
       </div>
-    </Link>
+    </article>
   );
 };
+
+export default Card;
 ```
 
 * First we are using a [`<Link ...>`](../createpages/gatsby-link.md) component to wrap the card and make the entire card clickable.  The link's `to={ }` attribute uses `{path}` as its value which is the path to the full/detail page, or node.  If you are wondering where does `<Link>` come from, **Link** is a built-in Gatsby component.  We imported at the beginning to be able to use it in our component.
@@ -92,6 +95,7 @@ const Card = ({ title, path, image, subtitle, rating, stars}) => {
 1. After `export default Card;`, add the following block of code to define the PropTypes for the card:
 
 ```javascript
+// Defining proptypes (data types)
 Card.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
@@ -107,9 +111,8 @@ Card.propTypes = {
 _See the full component code below_
 
 ```javascript
-// Import native React elements
+// Import native React & Gatsby resources
 import React from 'react';
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import Image from 'gatsby-image';
 
@@ -126,23 +129,25 @@ import {fluidImage} from '../../global/js/customPropTypes';
 
 const Card = ({ title, path, image, subtitle, rating, stars}) => {
   return (
-    <Link className={styles.Card} to={path} tabIndex={1}>
-      <Image fluid={image} />
-      <div className={styles.details}>
-        <div className={styles.detailsInner}>
-          <Heading classes={styles.title} level={3} styleLevel={4}>
+    <article className={styles.Card}>
+      <div className={styles.cardMedia}>
+        <Image fluid={image} />
+      </div>
+      <div className={styles.cardContent}>
+        <div className={styles.cardRating}>
+          <Rating rating={rating} classes={styles.rating} />
+          <Stars stars={stars} />
+        </div>
+        <div className={styles.cardText}>
+          <Heading classes={styles.movieTitle} headingLevel={3} url={path}>
             {title}
           </Heading>
-          <div className={styles.ratingStarsContainer}>
-            <Rating rating={rating} classes={styles.rating} />
-            <Stars stars={stars} />
-          </div>
-          <div className={styles.description}>
+          <div>
             {subtitle}
           </div>
         </div>
       </div>
-    </Link>
+    </article>
   );
 };
 

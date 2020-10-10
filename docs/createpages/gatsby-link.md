@@ -24,12 +24,13 @@ What `Link` does is preload or prefetch any pages it is directed to. One preload
 The `Link` component has its own documented powerful API that I recommend looking into specifically. It, along with `gatsby-image` are two of the best features that come out of the box with Gatsby. Often you will see built-in logic added to a wrapper component to test for whether the Gatsby should render a `Link` or an `a` tag, as well as whether the destination is a file download. This let’s you be more flexible, and not have to determine whether you can use `Link` in every instance. Here is the documented example of what most `Link` tags end up looking like in production as a new wrapper component called `GatsbyLink`:
 
 ```jsx
+import React from 'react';
 import { Link as GatsbyLink } from "gatsby"
 
 // Since DOM elements <a> cannot receive activeClassName
 // and partiallyActive, destructure the prop here and
 // pass it only to GatsbyLink
-const Link = ({ children, to, activeClassName, partiallyActive, ...other }) => {
+const Link = ({ children, to, ...other }) => {
 
   // Tailor the following test to your environment.
   // This example assumes that any internal link (intended for Gatsby)
@@ -39,7 +40,7 @@ const Link = ({ children, to, activeClassName, partiallyActive, ...other }) => {
 
   // Use Gatsby Link for internal links, and <a> for others
   if (internal) {
-  
+
     // Sometimes if we are linking to a file (PDF), the url pattern
     //may look internal, but it shouldn't use <Link>
     if (file) {
@@ -53,8 +54,6 @@ const Link = ({ children, to, activeClassName, partiallyActive, ...other }) => {
     return (
       <GatsbyLink
         to={to}
-        activeClassName={activeClassName}
-        partiallyActive={partiallyActive}
         {...other}
       >
         {children}
