@@ -5,6 +5,14 @@ html {
 
 body {
   @include body-xxsmall;
+  background-color: $color-gray-dark;
   margin: 0;
-  color: var(--color-old-coaly);
+  color: var(--color-white-out);
+}
+
+main {
+  margin: 0 20px;
+
+  @include breakpoint($bp-lg)
+    margin: 0 auto 40px;
 }

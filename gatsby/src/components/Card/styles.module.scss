@@ -1,37 +1,64 @@
 @import '../../global/styles/init';
 
 .Card {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 20%;
-  margin: 0 5px;
-}
+  border: 1px solid $color-red;
+  color: $color-gray-mid;
+  margin: 0 auto 50px;
+  width: 460px;
 
-.cardMedia {
+  @include breakpoint($bp-xsm) {
+    margin: 0 0 50px;
+    width: 275px;
+  }
+
+  @include breakpoint($bp-sm) {
+    margin: 0 10px 50px;
+  }
+
+  @include breakpoint($bp-md) {
+    margin: 0 15px 50px;
+  }
+
+  @include breakpoint($bp-xlg) {
+    margin: 0;
+  }
 
   img {
-    transition: transform 0.3s ease;
+    transition: transform 1s ease !important;
+  }
 
-    &:hover {
-      transform: scale(1.5);
+  &:hover {
+    background-color: $color-old-coaly;
+
+    img {
+      transform: scale(1.15)
     }
   }
 }
+
+.cardMedia {
+  overflow: hidden;
+}
+
 .cardText {
   padding: 10px 20px 20px;
+
+  a {
+    color: $color-limestone-light;
+    text-decoration: none;
+  }
 }
 
 .cardTitle {
+  @include title-xsmall;
   margin-bottom: 1rem;
   margin-top: 0;
 }
 
 .cardRating {
   align-items: center;
-  background-color: black;
+  background-color: $color-old-coaly;
+  border-bottom: 1px solid $color-red;
   display: flex;
-}
-
-.cardTitle {
-  @include body-xxsmall;
+  padding: 0 20px;
 }

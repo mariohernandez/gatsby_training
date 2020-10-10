@@ -34,7 +34,7 @@ const Star = ({ active }) => (
 );
 const Stars = ({ stars }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.starsContainer}>
       <ul className={styles.stars}>{buildStars(stars)}</ul>
       <p className={styles.text}>{`Average Rating: ${stars} out of 5 stars`}</p>
     </div>

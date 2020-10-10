@@ -1,0 +1,36 @@
+@import '../../global/styles/init';
+
+.movieList {
+  border-bottom: 2px solid $color-gray;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 40px;
+
+  &:last-child {
+    border: 0;
+  }
+}
+
+.movieListGenre {
+  color: var(--color-white-out);
+}
+
+.movieListItems {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($bp-xsm) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @include breakpoint($bp-sm) {
+    justify-content: flex-start;
+  }
+
+  @include breakpoint($bp-xlg) {
+    justify-content: space-between;
+  }
+}

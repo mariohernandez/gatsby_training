@@ -3,14 +3,11 @@
 .rating {
   @include body-xxsmall;
   align-items: center;
-  display: flex;
-  justify-content: center;
-  // background-color: var(--color-black);
-  height: 40px;
-  border-right: 1px solid var(--color-white-out);
   color: var(--color-white-out);
-  margin-right: 20px;
-  width: 40px;
+  display: flex;
+  font-weight: bold;
+  height: 40px;
+  justify-content: flex-start;
 }
 
 .text {

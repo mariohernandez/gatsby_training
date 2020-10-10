@@ -87,15 +87,14 @@
 }
 
 @mixin title-xsmall {
-  font-size: 17px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 1.5;
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--font-ls-mega);
   font-family: var(--font-family-sans);
 
   @include breakpoint($bp-md) {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 20px;
   }
 }
 

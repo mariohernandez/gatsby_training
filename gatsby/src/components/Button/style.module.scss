@@ -2,8 +2,8 @@
 
 .Button {
   @include gradient-button;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  background-color: $color-red;
+  appearance: none;
 
   &:link,
   &:visited,
