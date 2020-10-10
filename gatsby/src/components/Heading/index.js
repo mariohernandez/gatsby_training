@@ -1,33 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import Link from '../Link';
+import Link from '../Link';
 
 import { childrenType } from '../../global/js/customPropTypes';
 import styles from './styles.module.scss';
 
 const Heading = ({
   headingLevel,
-  // url,
+  url,
   children
 }) => {
   const Element = `h${headingLevel}`;
   return (
-    <Element className={styles.newHeading}>
-      {children}
+    <Element className={styles.Heading}>
+      {{url} ? <Link to={url}>{children}</Link> : {children}}
     </Element>
   );
 };
 
+export default Heading;
+
 Heading.propTypes = {
-  /** Tag level. Defaults to 2 */
   headingLevel: PropTypes.number,
-  /** Content of title. */
   text: PropTypes.string,
   children: childrenType
 };
 
 Heading.defaultProps = {
-  headingLevel: 2
+  headingLevel: 4
 };
-
-export default Heading;

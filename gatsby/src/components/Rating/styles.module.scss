@@ -2,11 +2,15 @@
 
 .rating {
   @include body-xxsmall;
-  position: relative;
-  padding: 10px;
-  border: 1px solid var(--color-white-out);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  // background-color: var(--color-black);
+  height: 40px;
+  border-right: 1px solid var(--color-white-out);
   color: var(--color-white-out);
-  overflow: hidden;
+  margin-right: 20px;
+  width: 40px;
 }
 
 .text {

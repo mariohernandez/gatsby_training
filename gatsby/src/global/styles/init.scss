@@ -48,7 +48,7 @@
   --color-creek: #{$color-creek};
   --color-creek--rgb: #{derive-rgb-values-from-hex($color-creek)};
   --color-creek-light: #{$color-creek-light};
-  --color-creek-light--rgb: #{derive-rgb-values-from-hex($color-creek-light)};
+  --color-creek-light--rg--colorb: #{derive-rgb-values-from-hex($color-creek-light)};
   --color-creek-max-light: #{$color-creek-max-light};
   --color-creek-max-light--rgb: #{derive-rgb-values-from-hex($color-creek-max-light)};
   --color-limestone: #{$color-limestone};

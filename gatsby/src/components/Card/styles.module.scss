@@ -3,65 +3,35 @@
 .Card {
   display: flex;
   flex-direction: column;
-  position: relative;
-  margin-right: .5rem;
-  width: 25%;
-  transition: transform .3s;
+  flex: 1 1 20%;
+  margin: 0 5px;
+}
 
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    transform: scale(1.05);
+.cardMedia {
 
-    .details {
-      display: flex;
-      opacity: 1;
+  img {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.5);
     }
   }
 }
+.cardText {
+  padding: 10px 20px 20px;
+}
 
-.title {
-  display: inline-block;
-  text-decoration: none;
+.cardTitle {
   margin-bottom: 1rem;
   margin-top: 0;
-  color: var(--color-white-out);
 }
 
-.details {
-  position: absolute;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: center;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 2;
-  transition: opacity .3s;
-}
-
-.detailsInner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 1.5rem;
-  z-index: 3;
-  color: var(--color-white-out);
-  background: var(--color-red);
-}
-
-.ratingStarsContainer {
-  display: flex;
+.cardRating {
   align-items: center;
-  margin-bottom: 1rem;
-  padding-left: .5rem;
+  background-color: black;
+  display: flex;
 }
 
-.rating {
-  margin-right: 1rem;
-}
-
-.description {
+.cardTitle {
   @include body-xxsmall;
 }

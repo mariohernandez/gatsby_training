@@ -17,19 +17,21 @@ import {fluidImage} from '../../global/js/customPropTypes';
 const Card = ({ title, path, image, subtitle, rating, stars}) => {
   return (
     <article className={styles.Card}>
-      <div className={styles.newCardMedia}>
+      <div className={styles.cardMedia}>
         <Image fluid={image} />
       </div>
-      <div className={styles.newCardContent}>
-        <Heading classes={styles.movieTitle} headingLevel={3} url={path}>
-          {title}
-        </Heading>
-        <div className={styles.newCardRating}>
+      <div className={styles.cardContent}>
+        <div className={styles.cardRating}>
           <Rating rating={rating} classes={styles.rating} />
           <Stars stars={stars} />
         </div>
-        <div className={styles.description}>
-          {subtitle}
+        <div className={styles.cardText}>
+          <Heading classes={styles.movieTitle} headingLevel={3} url={path}>
+            {title}
+          </Heading>
+          <div>
+            {subtitle}
+          </div>
         </div>
       </div>
     </article>

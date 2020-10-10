@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Eyebrow from '../Eyebrow';
+import Heading from '../Heading';
 import CardCollection from '../CardCollection';
 import Card from '../Card';
 
@@ -9,8 +9,10 @@ import styles from './styles.module.scss';
 
 const GenreSection = ({ title, items }) => {
   return (
-    <section className={styles.section}>
-      <Eyebrow>{title}</Eyebrow>
+    <>
+      <Heading classes={styles.genreHeading} headingLevel={2}>
+        {title}
+      </Heading>
       <CardCollection>
         {items.map(({ node }) => (
           <Card
@@ -26,7 +28,7 @@ const GenreSection = ({ title, items }) => {
           </Card>
         ))}
       </CardCollection>
-    </section>
+    </>
   );
 };
 
