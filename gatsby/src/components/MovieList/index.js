@@ -2,18 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Heading from '../Heading';
-import CardCollection from '../CardCollection';
 import Card from '../Card';
 
 import styles from './styles.module.scss';
 
-const GenreSection = ({ title, items }) => {
+const MovieList = ({ title, items }) => {
   return (
-    <>
-      <Heading classes={styles.genreHeading} headingLevel={2}>
-        {title}
-      </Heading>
-      <CardCollection>
+    <section className={styles.movieList}>
+      <div className={styles.movieListGenre}>
+        <Heading classes={styles.genreHeading} headingLevel={2}>
+          {title}
+        </Heading>
+      </div>
+      <div className={styles.movieListItems}>
         {items.map(({ node }) => (
           <Card
             key={node.id}
@@ -27,14 +28,14 @@ const GenreSection = ({ title, items }) => {
           >
           </Card>
         ))}
-      </CardCollection>
-    </>
+      </div>
+    </section>
   );
 };
 
-export default GenreSection;
+export default MovieList;
 
-GenreSection.propTypes = {
+MovieList.propTypes = {
   title: PropTypes.string,
   items: PropTypes.array
 };

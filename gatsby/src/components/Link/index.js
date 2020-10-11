@@ -40,6 +40,6 @@ const Link = ({ children, to, ...other }) => {
       {children}
     </a>
   )
-}
+};
 
 export default Link;

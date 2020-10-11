@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 
-import GenreSection from '../components/GenreSection';
+import MovieList from '../components/MovieList';
 
 const IndexPage = ({ data }) => {
   // Group movies by their genre name.
@@ -33,7 +33,7 @@ const IndexPage = ({ data }) => {
       />
       {/* Map over groups and pass each group in to the section. */}
       {Object.keys(groups).map((group) => (
-        <GenreSection key={group} title={group} items={groups[group]} />
+        <MovieList key={group} title={group} items={groups[group]} />
       ))}
     </Layout>
   );

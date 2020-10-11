@@ -23,7 +23,7 @@ const Card = ({ title, path, image, subtitle, rating, stars}) => {
       <div className={styles.cardContent}>
         <div className={styles.cardRating}>
           <Rating rating={rating} classes={styles.rating} />
-          <Stars stars={stars} />
+          <Stars className={styles.starsContainer} stars={stars} />
         </div>
         <div className={styles.cardText}>
           <Heading classes={styles.movieTitle} headingLevel={3} url={path}>

@@ -13,7 +13,7 @@ const Button = ({ classes, url, children, buttonType, ...rest }) => {
   return (
     <>
     {url ? (
-      <a className={buttonClass} {...rest} href={url}>{children}</a>
+      <Link to={url} className={buttonClass} {...rest}>{children}</Link>
     ):(
       <button className={buttonClass} {...rest}>
         {children}
