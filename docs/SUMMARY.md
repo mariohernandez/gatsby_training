@@ -25,6 +25,11 @@
 * [Working with CSS](components/working-with-css.md)
 * [Movie Card](components/movie-card.md)
 
+## Gatsby Core Components
+
+* [Gatsby Link](gatsby-components/gatsby-link.md)
+* [Gatsby Image](gatsby-components/gatsby-image.md)
+
 ## Data and GraphQL
 
 * [Data sources](data-and-graphql/data-sources.md)
@@ -35,21 +40,19 @@
 
 * [createPages Function](createpages/create-pages-function.md)
 * [Create a template](createpages/create-a-template.md)
-* [Gatsby Link](createpages/gatsby-link.md)
+
 
 ## Gatsby Plugins
 
 * [Gatsby plugins](gatsby-plugins/gatsby-plugins.md)
-* [Installing  a source plugin](gatsby-plugins/installing-a-source-plugin.md)
+* [Installing a source plugin](gatsby-plugins/installing-a-source-plugin.md)
 
-## Bonus
+<!-- ## Bonus
 
-* [Working with Images](bonus/working-with-images.md)
 * [Adding scripts using gatsby-ssr](bonus/adding-scripts-using-gatsby-ssr.md)
-* [Getting runtime data from APIs \(useEffect or useQuery\)](bonus/getting-runtime-data-from-apis-useeffect-or-usequery.md)
+* [Getting runtime data from APIs \(useEffect or useQuery\)](bonus/getting-runtime-data-from-apis-useeffect-or-usequery.md) -->
 
 ## Resources
 
 * [Gatsby and React Resources](resources/gatsby-and-react-resources.md)
 * [Other resources](resources/other-resources.md)
-

@@ -1,7 +1,10 @@
 @import '../../global/styles/init';
+
 .header {
-  margin-bottom: 1.45rem;
-  padding: 1rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
   background: var(--color-black);
 }
 
