@@ -4,8 +4,18 @@
   border-bottom: 2px solid $color-gray;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  max-width: $bp-md;
   padding-top: 10px;
   padding-bottom: 40px;
+
+  @include breakpoint($bp-md) {
+    max-width: $bp-lg;
+  }
+
+  @include breakpoint($bp-lg) {
+    max-width: $bp-xlg;
+  }
 
   &:last-child {
     border: 0;
