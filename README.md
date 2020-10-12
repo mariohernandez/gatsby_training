@@ -31,7 +31,16 @@ You can clone or download the repo anywhere in your computer \(i.e. Sites, Downl
 git clone git@github.com:mariohernandez/gatsby_training.git
 ```
 
-## 2. Build the environments:
+## Install Gatsby CLI
+Before you can run gatsby commands like `gatsby develop`, you need to install the Gatsby CLI globally.
+
+* Open your command line tool like Terminal (macOs), or PowerShell (Windows)
+* Run the following command:
+```
+npm install -g gatsby-cli
+```
+
+## 3. Build the environments:
 
 * After cloning the repo, cd into the newly created directory:
 
@@ -75,7 +84,7 @@ gatsby develop
 
 _This will start Gatsby which should immediately connect to Drupal to pull all content_.
 
-## 3. Access your Gatsby and Drupal sites
+## 4. Access your Gatsby and Drupal sites
 
 #### Gatsby:
 
