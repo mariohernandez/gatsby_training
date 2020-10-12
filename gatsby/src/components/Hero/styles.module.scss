@@ -1,12 +1,21 @@
+@import '../../global/styles/init';
+
 .hero {
   overflow: hidden;
   width: 100%;
 
-  &:hover {
+  h1,
+  h2 {
+    margin-bottom: 0;
 
-    .content {
-      opacity: 1;
+    @include breakpoint($bp-md) {
+      font-size: 60px;
+      margin-bottom: inherit;
     }
+  }
+
+  h2 {
+    font-size: 16px;
   }
 }
 
@@ -34,10 +43,10 @@
 
 .content {
   position: absolute;
-  height: 100%;
-  padding: 5%;
   z-index: 1;
-  transition: opacity .3s;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
 }
 
 .link {
