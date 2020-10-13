@@ -27,8 +27,8 @@
 
 ## Gatsby Core Components
 
-* [Gatsby Link](gatsby-components/gatsby-link.md)
-* [Gatsby Image](gatsby-components/gatsby-image.md)
+* [Gatsby Link](gatsby-core-components/gatsby-link.md)
+* [Gatsby Image](gatsby-core-components/gatsby-image.md)
 
 ## Data and GraphQL
 
@@ -41,18 +41,13 @@
 * [createPages Function](createpages/create-pages-function.md)
 * [Create a template](createpages/create-a-template.md)
 
-
 ## Gatsby Plugins
 
 * [Gatsby plugins](gatsby-plugins/gatsby-plugins.md)
 * [Installing a source plugin](gatsby-plugins/installing-a-source-plugin.md)
 
-<!-- ## Bonus
-
-* [Adding scripts using gatsby-ssr](bonus/adding-scripts-using-gatsby-ssr.md)
-* [Getting runtime data from APIs \(useEffect or useQuery\)](bonus/getting-runtime-data-from-apis-useeffect-or-usequery.md) -->
-
 ## Resources
 
 * [Gatsby and React Resources](resources/gatsby-and-react-resources.md)
 * [Other resources](resources/other-resources.md)
+

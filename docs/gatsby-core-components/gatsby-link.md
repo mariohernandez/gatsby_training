@@ -3,25 +3,21 @@
 Any page that Gatsby creates is going to be static and fast. Gatsby knows which pages it has created, so we can do something special to make those pages feel even faster. Let’s look at this example from the docs:
 
 ```jsx
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-const Page = () => (
+const Button = () => (
   <div>
-    <p>
-      Check out my <Link to="/blog">blog</Link>!
-    </p>
-    <p>
-      {/* Note that external links still use `a` tags. */}
-      Follow me on <a href="https://twitter.com/gatsbyjs">Twitter</a>!
-    </p>
+    <Link to="/blog">Visit my blog</Link>!
   </div>
-)
+);
+
+export default Button;
 ```
 
 What `Link` does is preload or prefetch any pages it is directed to. One preload is a low priority request when its corresponding `Link` is in the viewport. Then, if the user hover or focuses the `Link` a high priority request is made. So then, by the time the user clicks the `Link` the destination page is probably already loaded. This gives navigation a nearly instant feel.
 
-The `Link` component has its own documented powerful API that I recommend looking into specifically. It, along with `gatsby-image` are two of the best features that come out of the box with Gatsby. Often you will see built-in logic added to a wrapper component to test for whether the Gatsby should render a `Link` or an `a` tag, as well as whether the destination is a file download. This let’s you be more flexible, and not have to determine whether you can use `Link` in every instance. Here is the documented example of what most `Link` tags end up looking like in production as a new wrapper component called `GatsbyLink`:
+The `Link` component has its own documented powerful API that I recommend looking into specifically. It, along with `gatsby-image` are two of the best features that come out of the box with Gatsby. Often you will see built-in logic added to a wrapper component to test for whether the Gatsby should render a `Link` or an `a` tag, as well as whether the destination is a file download. This lets you be more flexible, and not have to determine whether you can use `Link` in every instance. Here is the documented example of what most `Link` tags end up looking like in production as a new wrapper component called `GatsbyLink`:
 
 ```jsx
 import React from 'react';

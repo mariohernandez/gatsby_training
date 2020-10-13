@@ -32,13 +32,15 @@ git clone git@github.com:mariohernandez/gatsby_training.git
 ```
 
 ## Install Gatsby CLI
+
 Before you can run gatsby commands like `gatsby develop`, you need to install the Gatsby CLI globally.
 
-* Open your command line tool like Terminal (macOs), or PowerShell (Windows)
+* Open your command line tool like Terminal \(macOs\), or PowerShell \(Windows\)
 * Run the following command:
-```
-npm install -g gatsby-cli
-```
+
+  ```text
+  npm install -g gatsby-cli
+  ```
 
 ## 3. Build the environments:
 
@@ -103,3 +105,4 @@ _This will start Gatsby which should immediately connect to Drupal to pull all c
 [https://nitflex.lndo.site/user/login](https://nitflex.lndo.site/user/login)
 
 Your credentials are: username: `admin`, password: `admin`
+

@@ -1,2 +1,2 @@
-# Installing  a source plugin
+# Installing a source plugin
 
