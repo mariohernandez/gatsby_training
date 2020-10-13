@@ -14,7 +14,7 @@ import React from 'react';
 
 const Eyebrow = ({ children }) => {
   return (
-    <div style={{ color: '#fff' }}>
+    <div style={{ color: '#000' }}>
       {children}
     </div>
   );
@@ -31,7 +31,7 @@ export default Eyebrow;
 * The `return` method returns a _description_ of what you want to see on the screen.  React/Gatsby takes the description and displays the result. In particular, `return` returns a **Gatsby element**, which is a lightweight description of what to render.
 * Finally, `export default Eyebrow` makes this component available so it can be reused anywhere.
 
-### Let's use the new Eyebrow component
+### Let's use the new Eyebrow component \(only as an example\)
 
 1. In your editor, open `components/header.js`
 2. At the top of the file, import the Eyebrow component: `import Eyebrow from "./eyebrow";`
