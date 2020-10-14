@@ -3,22 +3,19 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styles from './style.module.scss';
 
-// Import custom PropTypes
-import {childrenType} from '../../global/js/customPropTypes';
-
-const Button = ({ classes, url, children, buttonType, ...rest }) => {
+const Button = ({ url, children, buttonType, ...rest }) => {
   const buttonClass = classnames(styles.Button, {
     [styles.primary]: buttonType === 'primary',
   })
   return (
     <>
-    {url ? (
-      <Link to={url} className={buttonClass} {...rest}>{children}</Link>
-    ):(
-      <button className={buttonClass} {...rest}>
-        {children}
-      </button>
-    )}
+      {url ? (
+        <a className={buttonClass} {...rest} href={url}>{children}</a>
+      ):(
+        <button className={buttonClass} {...rest}>
+          {children}
+        </button>
+      )}
     </>
   );
 };
@@ -26,7 +23,6 @@ const Button = ({ classes, url, children, buttonType, ...rest }) => {
 export default Button;
 
 Button.propTypes = {
-  classes: PropTypes.string,
-  buttonClass: PropTypes.oneOf(['primary']),
-  children: childrenType
+  buttonType: PropTypes.oneOf(['primary']),
+  children: 'Watch now'
 };

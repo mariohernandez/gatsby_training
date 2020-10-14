@@ -16,19 +16,19 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styles from './style.module.scss';
 
-const Button = ({ classes, url, children, buttonType, ...rest }) => {
+const Button = ({ url, children, buttonType, ...rest }) => {
   const buttonClass = classnames(styles.Button, {
     [styles.primary]: buttonType === 'primary',
   })
   return (
     <>
-    {url ? (
-      <a className={buttonClass} {...rest} href={url}>{children}</a>
-    ):(
-      <button className={buttonClass} {...rest}>
-        {children}
-      </button>
-    )}
+      {url ? (
+        <a className={buttonClass} {...rest} href={url}>{children}</a>
+      ):(
+        <button className={buttonClass} {...rest}>
+          {children}
+        </button>
+      )}
     </>
   );
 };
@@ -36,8 +36,7 @@ const Button = ({ classes, url, children, buttonType, ...rest }) => {
 export default Button;
 
 Button.propTypes = {
-  classes: PropTypes.string,
-  buttonClass: PropTypes.oneOf(['primary']),
+  buttonType: PropTypes.oneOf(['primary']),
   children: 'Watch now'
 };
 ```
@@ -54,7 +53,6 @@ Button.propTypes = {
 ### The Component
 
 * As we indicated in the previous exercise, every component in Gatsby is a JavaScript function. In the case of this component, we set its name as **Button** and we are passing several props. Notice the `...rest` part? this is to allow to add additional props to the component when we use it, if needed.
-* On line 7, we are setting a variable \(`buttonClass`\), which pulls the available classes in `style.module.scss` and using **namespace**, are joined in together.  In addition, we set a condition by passing the CSS class of `primary` 
+* On line 7, we are setting a variable \(`buttonClass`\), which pulls the available classes in `style.module.scss` and using **namespace**, are joined in together.  In addition, we set a condition by passing the CSS class of `primary`
 * Within the `return` statement, we are first running some logic to determine what HTML element we need to render based on the data we are receiving. For example, if a URL is passed, we will render a `<a>` element, otherwise we will render a `<button>` element
 * Finally, once the component is built, we define the different propTypes expected by the component to ensure data validation. For example, for the `classes` props, we wouldn't want a boolean or number type, we want a string which basically will be a list of string values to be used as CSS classes.
-
