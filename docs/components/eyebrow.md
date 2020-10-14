@@ -4,8 +4,9 @@ Before we dive into the more advance stuff, let's start by creating a super simp
 
 ### Exercise:
 
-1. Inside **components**, create a new file called `eyebrow.js`
-2. In `eyebrow.js`, add the following code:
+1. Inside **components**, create a new folder called **Eyebrow**
+2. Inside the Eyebrow folder, create a new file called `index.js`
+2. In `index.js`, add the following code:
 
 {% tabs %}
 {% tab title="/components/eyebrow.js" %}
@@ -33,7 +34,7 @@ export default Eyebrow;
 
 ### Let's use the new Eyebrow component \(only as an example\)
 
-1. In your editor, open `components/header.js`
+1. In your editor, open `components/Header/index.js`
 2. At the top of the file, import the Eyebrow component: `import Eyebrow from "./eyebrow";`
 3. After the closing of the Link tag \(`</Link>`\), add the Eyebrow component as follows:
 
@@ -43,4 +44,3 @@ export default Eyebrow;
 
 * After saving your changes if you visit your site's homepage you should see "_Learning Gatsby_" under the the Site's title.
 * In this example we have given the `children` prop a value of "Learning Gatsby".  This is great because this means we can reuse the Eyebrow component anywhere and we can change its value to anything we want on each instance.
-
