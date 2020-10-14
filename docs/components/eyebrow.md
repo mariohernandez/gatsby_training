@@ -35,7 +35,7 @@ export default Eyebrow;
 ### Let's use the new Eyebrow component \(only as an example\)
 
 1. In your editor, open `components/Header/index.js`
-2. At the top of the file, import the Eyebrow component: `import Eyebrow from "./eyebrow";`
+2. At the top of the file, import the Eyebrow component: `import Eyebrow from '../Eyebrow';`
 3. After the closing of the Link tag \(`</Link>`\), add the Eyebrow component as follows:
 
 ```javascript
