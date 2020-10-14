@@ -41,13 +41,12 @@
 * [createPages Function](createpages/create-pages-function.md)
 * [Create a template](createpages/create-a-template.md)
 
-## Gatsby Plugins
+<!-- ## Gatsby Plugins
 
 * [Gatsby plugins](gatsby-plugins/gatsby-plugins.md)
-* [Installing a source plugin](gatsby-plugins/installing-a-source-plugin.md)
+* [Installing a source plugin](gatsby-plugins/installing-a-source-plugin.md) -->
 
 ## Resources
 
 * [Gatsby and React Resources](resources/gatsby-and-react-resources.md)
 * [Other resources](resources/other-resources.md)
-
