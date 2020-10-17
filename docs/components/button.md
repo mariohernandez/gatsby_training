@@ -56,3 +56,4 @@ Button.propTypes = {
 * On line 7, we are setting a variable \(`buttonClass`\), which pulls the available classes in `style.module.scss` and using **namespace**, are joined in together.  In addition, we set a condition by passing the CSS class of `primary`
 * Within the `return` statement, we are first running some logic to determine what HTML element we need to render based on the data we are receiving. For example, if a URL is passed, we will render a `<a>` element, otherwise we will render a `<button>` element
 * Finally, once the component is built, we define the different propTypes expected by the component to ensure data validation. For example, for the `classes` props, we wouldn't want a boolean or number type, we want a string which basically will be a list of string values to be used as CSS classes.
+
