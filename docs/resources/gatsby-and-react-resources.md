@@ -7,6 +7,7 @@
 * [Gatsby Image](https://codebushi.com/using-gatsby-image/) \(Blog post\)
 * [Gatsby Link](https://www.gatsbyjs.com/docs/gatsby-link/#show-active-styles-for-partially-matched-and-parent-links) \(Gatsby docs\)
 * [PRPL](https://www.gatsbyjs.com/docs/prpl-pattern/) \(Docs\)
+* [Improving Performance and Scalability](https://github.com/gatsbyjs/gatsby/issues/431) \(Github Issue\)
 
 ### Gatsby with Drupal
 
