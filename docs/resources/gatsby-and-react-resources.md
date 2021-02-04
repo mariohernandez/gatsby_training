@@ -9,6 +9,7 @@
 * [PRPL](https://www.gatsbyjs.com/docs/prpl-pattern/) \(Docs\)
 * [Improving Performance and Scalability](https://github.com/gatsbyjs/gatsby/issues/431) \(Github Issue\)
 * [Web Performance 101 - also, why is Gatsby so fast?](https://www.gatsbyjs.com/blog/2017-09-13-why-is-gatsby-so-fast/) \(Talk by Kyle Mathews\)
+* [Create custom GraphQL Schema for empty fields](https://www.jamesdflynn.com/development/gatsbyjs-drupal-create-custom-graphql-schema-empty-fields)
 
 ### Gatsby with Drupal
 
