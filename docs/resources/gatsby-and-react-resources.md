@@ -10,6 +10,7 @@
 * [Improving Performance and Scalability](https://github.com/gatsbyjs/gatsby/issues/431) \(Github Issue\)
 * [Web Performance 101 - also, why is Gatsby so fast?](https://www.gatsbyjs.com/blog/2017-09-13-why-is-gatsby-so-fast/) \(Talk by Kyle Mathews\)
 * [Create custom GraphQL Schema for empty fields](https://www.jamesdflynn.com/development/gatsbyjs-drupal-create-custom-graphql-schema-empty-fields)
+* [How to render a button or link in Twig or Gatsby](https://www.mediacurrent.com/blog/how-dynamically-render-button-or-link-drupal-or-gatsby) \(Blog post and screencast\)
 
 ### Gatsby with Drupal
 
