@@ -14,7 +14,7 @@ This repo will allow you to get the codebase to build a new Gatsby website which
 * Windows 10 Pro+ or equivalent \(eg Windows 10 Enterprise\) with Hyper-V running
 * Linux with kernel version 4.x or higher
 
-### Software (Install before proceeding):
+### Software (Must install):
 
 * Docker - [macOS](https://docs.docker.com/docker-for-mac/install/) or [Windows 10](https://docs.docker.com/docker-for-windows/install/)
 * Lando - [macOs](https://docs.lando.dev/basics/installation.html#macos) or [Windows 10](https://medium.com/@jiles/installing-lando-docker-and-composer-on-a-windows-10-pro-environment-e405efba2c96)
@@ -74,7 +74,7 @@ Before you can run gatsby commands, you need to install the Gatsby CLI globally.
 npm install -g gatsby-cli
 ```
 
-## Start your Gatsby site
+### Start your Gatsby site
 ```text
 gatsby develop
 ```
