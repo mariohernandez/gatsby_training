@@ -4,10 +4,6 @@ recipe: drupal8
 config:
   webroot: drupal/web
 
-proxy:
-  node:
-    - gatsby.lndo.site:8000
-
 services:
   appserver:
     build:
@@ -15,20 +11,3 @@ services:
       - cd drupal && composer install
     run:
       - /app/drupal/scripts/init.sh
-  node:
-    type: node:10.14
-    port: 8000
-    globals:
-      gatsby-cli: "2.8.3"
-      npm: "6.9.0"
-    run:
-      - echo "Installing Gatsby dependencies."
-      - cd gatsby && npm install
-
-tooling:
-  npm:
-    service: node
-  node:
-    service: node
-  gatsby:
-    service: node
