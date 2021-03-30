@@ -11,6 +11,7 @@ proxy:
 services:
   appserver:
     build:
+      - composer selfupdate --1
       - cd drupal && composer install
     run:
       - /app/drupal/scripts/init.sh
