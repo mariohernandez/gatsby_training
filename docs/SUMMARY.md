@@ -22,6 +22,7 @@
 * [About Components](components/components.md)
 * [Eyebrow](components/eyebrow.md)
 * [Button](components/button.md)
+* [Heading](components/heading.md)
 * [Working with CSS](components/working-with-css.md)
 * [Movie Card](components/movie-card.md)
 
