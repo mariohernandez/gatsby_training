@@ -14,7 +14,7 @@ Gatsby has two modes for compiling a site: 1. Develop - run with the `gatsby dev
 
 You can start Gatsby in either mode with its respective command: gatsby develop or gatsby build.
 
-![Visual of how Gatsby works](../.gitbook/assets/gatsbyjs%20%282%29.png)
+![Visual of how Gatsby works](../.gitbook/assets/gatsbyjs%20%282%29%20%282%29.png)
 
 ## Build time vs runtime
 

@@ -12,18 +12,29 @@ The next component we will build is a Button. This one uses all the same princip
 {% tab title="button.js" %}
 ```javascript
 import React from 'react';
+import { Link as GatsbyLink } from "gatsby";
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import styles from './style.module.scss';
 
-const Button = ({ url, children, buttonType, ...rest }) => {
-  const buttonClass = classnames(styles.Button, {
-    [styles.primary]: buttonType === 'primary',
-  })
+const Button = ({ children, url, activeClassName, partiallyActive, buttonType, ...rest }) => {
+  const chooseButtonStyle = (buttonType) => {
+    return (buttonType === 'primary')
+      ? {[styles.primary]: true}
+      : {[styles.secondary]: true};
+  };
+  const buttonClass = classnames(styles.Button, chooseButtonStyle(buttonType));
   return (
     <>
       {url ? (
-        <a className={buttonClass} {...rest} href={url}>{children}</a>
+        <GatsbyLink
+          to={url}
+          activeClassName={activeClassName}
+          partiallyActive={partiallyActive}
+          className={buttonClass} {...rest}
+        >
+          {children}
+        </GatsbyLink>
       ):(
         <button className={buttonClass} {...rest}>
           {children}
@@ -36,9 +47,10 @@ const Button = ({ url, children, buttonType, ...rest }) => {
 export default Button;
 
 Button.propTypes = {
-  buttonType: PropTypes.oneOf(['primary']),
-  children: 'Watch now'
+  buttonType: PropTypes.oneOf(['primary', 'secondary', '']),
+  children: PropTypes.string
 };
+
 ```
 {% endtab %}
 {% endtabs %}
